@@ -14,7 +14,159 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      certificates: {
+        Row: {
+          certificate_image_url: string | null
+          created_at: string | null
+          date: string
+          description: string | null
+          display_order: number | null
+          id: string
+          issuer: string
+          title: string
+        }
+        Insert: {
+          certificate_image_url?: string | null
+          created_at?: string | null
+          date: string
+          description?: string | null
+          display_order?: number | null
+          id?: string
+          issuer: string
+          title: string
+        }
+        Update: {
+          certificate_image_url?: string | null
+          created_at?: string | null
+          date?: string
+          description?: string | null
+          display_order?: number | null
+          id?: string
+          issuer?: string
+          title?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          about_me: string | null
+          created_at: string | null
+          cv_pdf_url: string | null
+          email: string | null
+          id: string
+          location: string | null
+          name: string
+          phone: string | null
+          profile_image_url: string | null
+          title: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          about_me?: string | null
+          created_at?: string | null
+          cv_pdf_url?: string | null
+          email?: string | null
+          id?: string
+          location?: string | null
+          name: string
+          phone?: string | null
+          profile_image_url?: string | null
+          title?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          about_me?: string | null
+          created_at?: string | null
+          cv_pdf_url?: string | null
+          email?: string | null
+          id?: string
+          location?: string | null
+          name?: string
+          phone?: string | null
+          profile_image_url?: string | null
+          title?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      shakti_projects: {
+        Row: {
+          achievements: string[] | null
+          created_at: string | null
+          description: string | null
+          display_order: number | null
+          id: string
+          image_urls: string[] | null
+          technologies: string[] | null
+          title: string
+        }
+        Insert: {
+          achievements?: string[] | null
+          created_at?: string | null
+          description?: string | null
+          display_order?: number | null
+          id?: string
+          image_urls?: string[] | null
+          technologies?: string[] | null
+          title: string
+        }
+        Update: {
+          achievements?: string[] | null
+          created_at?: string | null
+          description?: string | null
+          display_order?: number | null
+          id?: string
+          image_urls?: string[] | null
+          technologies?: string[] | null
+          title?: string
+        }
+        Relationships: []
+      }
+      undergraduate_projects: {
+        Row: {
+          achievements: string[] | null
+          category: string
+          collaborators: string[] | null
+          created_at: string | null
+          date_range: string | null
+          description: string | null
+          display_order: number | null
+          id: string
+          image_urls: string[] | null
+          mentor: string | null
+          technologies: string[] | null
+          title: string
+        }
+        Insert: {
+          achievements?: string[] | null
+          category: string
+          collaborators?: string[] | null
+          created_at?: string | null
+          date_range?: string | null
+          description?: string | null
+          display_order?: number | null
+          id?: string
+          image_urls?: string[] | null
+          mentor?: string | null
+          technologies?: string[] | null
+          title: string
+        }
+        Update: {
+          achievements?: string[] | null
+          category?: string
+          collaborators?: string[] | null
+          created_at?: string | null
+          date_range?: string | null
+          description?: string | null
+          display_order?: number | null
+          id?: string
+          image_urls?: string[] | null
+          mentor?: string | null
+          technologies?: string[] | null
+          title?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
