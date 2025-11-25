@@ -13,6 +13,7 @@ export default function Header() {
         { name: "Certificates", href: "/certificates" },
         { name: "Shakti Photon Solutions", href: "/shakti-photon" },
         { name: "Undergraduate Research", href: "/research" },
+        { name: "Philosophy", href: "/philosophy" },
     ];
 
     return (

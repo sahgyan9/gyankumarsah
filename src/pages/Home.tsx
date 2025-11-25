@@ -12,9 +12,9 @@ export default function Home() {
         <>
             <Helmet>
                 <title>Gyan Kumar Sah - Physics Researcher & Developer</title>
-                <meta 
-                    name="description" 
-                    content="Gyan Kumar Sah - Undergraduate Physics student at SRM University AP, specializing in material science, optoelectronics, and electrochemistry research." 
+                <meta
+                    name="description"
+                    content="Gyan Kumar Sah - Undergraduate Physics student at SRM University AP, specializing in material science, optoelectronics, and electrochemistry research."
                 />
                 <meta property="og:title" content="Gyan Kumar Sah - Physics Researcher & Developer" />
                 <meta property="og:description" content="Undergraduate Physics student at SRM University AP, specializing in material science, optoelectronics, and electrochemistry research." />
