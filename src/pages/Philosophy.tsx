@@ -13,9 +13,9 @@ export default function Philosophy() {
                 </h3>
             </div>
             <div className="w-full max-w-4xl h-96 rounded-lg overflow-hidden">
-                <img 
-                    src="/mountain-philosophy.png" 
-                    alt="Mountain Philosophy" 
+                <img
+                    src="/mountain-philosophy.png"
+                    alt="Mountain Philosophy"
                     className="w-full h-full object-cover"
                 />
             </div>

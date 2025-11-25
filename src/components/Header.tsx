@@ -34,8 +34,8 @@ export default function Header() {
                                 key={item.name}
                                 to={item.href}
                                 className={`text-sm font-medium transition-colors hover:text-primary-600 dark:hover:text-primary-400 ${location.pathname === item.href
-                                        ? "text-primary-600 dark:text-primary-400"
-                                        : "text-gray-700 dark:text-gray-300"
+                                    ? "text-primary-600 dark:text-primary-400"
+                                    : "text-gray-700 dark:text-gray-300"
                                     }`}
                             >
                                 {item.name}
@@ -92,8 +92,8 @@ export default function Header() {
                                 to={item.href}
                                 onClick={() => setMobileMenuOpen(false)}
                                 className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${location.pathname === item.href
-                                        ? "bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400"
-                                        : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
+                                    ? "bg-primary-50 dark:bg-primary-900/20 text-primary-600 dark:text-primary-400"
+                                    : "text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"
                                     }`}
                             >
                                 {item.name}
