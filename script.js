@@ -50,6 +50,10 @@ const hideLovableBadge = () => {
       // 1. Hide by custom-element tag name matching known Lovable badge names
       if (LOVABLE_PATTERNS.some(p => tag.includes(p))) {
         el.style.setProperty('display', 'none', 'important');
+        // Also hide the parent to take sibling close-buttons with it
+        if (el.parentElement && el.parentElement !== document.body) {
+          el.parentElement.style.setProperty('display', 'none', 'important');
+        }
         return;
       }
 
@@ -57,7 +61,11 @@ const hideLovableBadge = () => {
       if (el.shadowRoot) {
         const shadowLink = el.shadowRoot.querySelector('a[href*="lovable"]');
         if (shadowLink) {
+          // Hide the host AND its parent container (which holds sibling close-button)
           el.style.setProperty('display', 'none', 'important');
+          if (el.parentElement && el.parentElement !== document.body) {
+            el.parentElement.style.setProperty('display', 'none', 'important');
+          }
           // Also inject CSS inside the shadow root for good measure
           if (!el.shadowRoot.querySelector('style[data-hider]')) {
             const s = document.createElement('style');
