@@ -1,36 +1,234 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- SEO Meta Tags -->
-    <title>Gyan Kumar Sah - Physics Researcher & Engineer | Portfolio</title>
-    <meta name="description" content="Gyan Kumar Sah - Undergraduate Physics Researcher at SRM University specializing in clean energy, nanomaterials, quantum computing. Research Engineer at Shakti Photon Solutions." />
-    <meta name="author" content="Gyan Kumar Sah" />
-    <meta name="keywords" content="Gyan Kumar Sah, Physics Researcher, SRM University, Shakti Photon Solutions, Green Hydrogen, Quantum Computing, Nanomaterials, Research Engineer, Nepal, India" />
-    <link rel="canonical" href="https://lovable.dev/projects/a7f843f6-275c-4c5c-b86d-cc8c986da419" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Gyan Kumar Sah - Physics Researcher & Engineer" />
-    <meta property="og:description" content="Portfolio of Gyan Kumar Sah - Undergraduate Physics Researcher specializing in clean energy, nanomaterials, and quantum computing" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lovable.dev/projects/a7f843f6-275c-4c5c-b86d-cc8c986da419" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gyan Kumar Sah</title>
+  <meta name="description"
+    content="Physics student, researcher, and builder. Exploring the intersection of quantum technology, experimental physics, and human-centric innovation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Gyan Kumar Sah - Physics Researcher & Engineer" />
-    <meta name="twitter:description" content="Portfolio showcasing research in clean energy, quantum computing, and nanomaterials" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<body>
 
-    <!-- Additional SEO -->
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
-  </head>
+  <!-- NAV -->
+  <nav id="nav">
+    <span class="nav-name">Gyan Sah</span>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="mailto:sahgyan9@gmail.com" class="nav-cta">Say hello →</a>
+    </div>
+  </nav>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-inner">
+        <p class="hero-location">Nepal</p>
+        <h1 class="hero-name">Gyan Kumar Sah</h1>
+
+        <blockquote class="hero-quote">
+          "When you want something, all the universe conspires in helping you to achieve it."
+          <cite>— Paulo Coelho, The Alchemist</cite>
+        </blockquote>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="profile.jpeg" alt="Gyan Kumar Sah" class="hero-photo-right" />
+      </div>
+    </div>
+    <div class="hero-scroll-hint">↓</div>
+  </section>
+
+  <!-- WORK / RESEARCH -->
+  <section id="work">
+    <div class="section-inner">
+      <h2 class="section-label">Academic Research &amp; Internship</h2>
+
+      <div class="accordion">
+
+        <details class="acc-item">
+          <summary class="acc-header">
+            <div class="acc-meta">Exotic Interface Lab · SRM University, AP</div>
+            <h3 class="acc-title">CdSe / Graphene Quantum Dot Photodetector</h3>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <p>Investigated hybrid photoresponse by drop-casting CdSe and GQD composites on silicon wafers. Automated I–V and time-response measurements using LabVIEW, Keithley SMU, and a lock-in amplifier. Cleaned and analysed data in Python.</p>
+            <div class="work-tags">
+              <span>LabVIEW</span><span>Keithley 2636B</span><span>MFLI Lock-In</span><span>Python</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="acc-item">
+          <summary class="acc-header">
+            <div class="acc-meta">Exotic Interface Lab · SRM University, AP</div>
+            <h3 class="acc-title">Optically Controlled Ferromagnetic Thin Film</h3>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <p>Deposited 30 nm Cobalt on glass substrate using RF sputtering with a masked Hall geometry. Performed anomalous Hall effect measurements with a Zurich MFLI lock-in amplifier to study optical control of ferromagnetism.</p>
+            <div class="work-tags">
+              <span>RF Sputtering</span><span>Hall Effect</span><span>Thin Films</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="acc-item">
+          <summary class="acc-header">
+            <div class="acc-meta">Exotic Interface Lab · SRM University, AP</div>
+            <h3 class="acc-title">Cryogenic System Setup for Low-Temperature Measurements</h3>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <p>CNC-machined an aluminium connector to maintain 10⁻³ mbar pressure. Wrote LabVIEW programs interfacing a Keithley SMU and DC2200 LED driver to fully automate measurements at cryogenic temperatures.</p>
+            <div class="work-tags">
+              <span>CNC</span><span>LabVIEW</span><span>Cryogenics</span><span>Vacuum Systems</span>
+            </div>
+          </div>
+        </details>
+
+        <details class="acc-item">
+          <summary class="acc-header">
+            <div class="acc-meta">Shakti Photon Solutions · Guntur, India — Paid Internship</div>
+            <h3 class="acc-title">Green Hydrogen Electrolyzer &amp; Fuel Cell Engineering</h3>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <p>Designed and manufactured electrolyzer parts using Fusion 360, CNC, and 3D printing across materials like PTFE, graphite, and steel. Fabricated MEAs with an ultrasonic spray nozzle. Built an Arduino hydrogen-leak detection system. Delivered and commissioned a fuel cell BOP at IIT Delhi.</p>
+            <div class="work-tags">
+              <span>Fusion 360</span><span>PEM/AEM</span><span>Arduino</span><span>MEA Fabrication</span>
+            </div>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER QUOTE -->
+  <div class="interlude">
+    <blockquote>
+      "It is not enough to have a good mind. The main thing is to use it well."
+      <cite>— René Descartes</cite>
+    </blockquote>
+  </div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-label">Projects &amp; Experiments</h2>
+
+      <div class="projects-list">
+
+        <div class="project-row">
+          <div class="project-left">
+            <span class="project-num">01</span>
+          </div>
+          <div class="project-right">
+            <h3>Quantum Double Shield Protocol</h3>
+            <p>A quantum-enhanced secure communication protocol with adaptive authentication, built with Qiskit
+              simulators. Won 3rd place at the Amaravati Quantum Valley Hackathon.</p>
+            <a href="https://preview--qdsp.lovable.app/" target="_blank" rel="noopener" class="project-link">View
+              prototype →</a>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <div class="project-left">
+            <span class="project-num">02</span>
+          </div>
+          <div class="project-right">
+            <h3>Friendly Learning — SRMAP</h3>
+            <p>A peer-to-peer mentoring and academic collaboration platform for students. Self-initiated to make
+              learning more accessible and less transactional.</p>
+            <a href="https://friendly-learning-srmap.lovable.app/" target="_blank" rel="noopener"
+              class="project-link">Visit site →</a>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <div class="project-left">
+            <span class="project-num">03</span>
+          </div>
+          <div class="project-right">
+            <h3>Temperature-Controlled Fan System</h3>
+            <p>An automatic fan controller built from first principles using a BC107 transistor, thermistor, and a
+              3D-printed housing — designed to be functional, not just a demo.</p>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <div class="project-left">
+            <span class="project-num">04</span>
+          </div>
+          <div class="project-right">
+            <h3>Post-Quantum Cryptography Study</h3>
+            <p>Explored Shor's Algorithm, quantum superposition, and the implications for existing cryptographic systems
+              as part of a supervised academic project.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner about-grid">
+
+      <div class="about-left">
+        <h2 class="section-label">About</h2>
+        <blockquote class="about-quote">
+          "Everything you need is already within you."
+          <cite>— Hermann Hesse, Siddhartha</cite>
+        </blockquote>
+      </div>
+
+      <div class="about-right">
+        <p>
+          I grew up in Sarlahi, Nepal — curious enough to try making soap out of foam and
+          getting scolded by my mom for it. That curiosity led me to physics, and physics
+          led me to labs, instruments, and a deep belief that science should serve people.
+        </p>
+        <p>
+          I am currently a third-year Physics student at SRM University, Andhra Pradesh,
+          on an 80% merit scholarship. My work sits at the intersection of experimental
+          condensed matter physics and quantum technology. I do not just study things —
+          I build and measure them.
+        </p>
+        <p>
+          Outside the lab I read philosophy — Siddhartha, The Alchemist, The Untethered Soul,
+          The Peaceful Warrior. I believe the best engineers are also the most reflective ones.
+        </p>
+
+        <div class="about-links">
+          <a href="https://www.linkedin.com/in/gyan-sah-a4705b291" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/sahgyan9" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:sahgyan9@gmail.com">sahgyan9@gmail.com</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p class="footer-quote">
+      "The journey itself is the destination."
+    </p>
+    <p class="footer-copy">© 2026 Gyan Kumar Sah</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
