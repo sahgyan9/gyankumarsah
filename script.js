@@ -32,3 +32,24 @@ document.head.insertAdjacentHTML('beforeend', `
     }
   </style>
 `);
+
+// Hide "Edit with Lovable" badge
+const hideLovableBadge = () => {
+  document.querySelectorAll('a, button, div').forEach(el => {
+    if (el.innerText && el.innerText.trim() === 'Edit with Lovable') {
+      const target = el.closest('a') || el.closest('button') || el;
+      target.style.setProperty('display', 'none', 'important');
+    }
+  });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  hideLovableBadge();
+  // Check again after a delay in case it's injected asynchronously
+  setTimeout(hideLovableBadge, 1000);
+  setTimeout(hideLovableBadge, 2500);
+});
+
+// Also use a MutationObserver for dynamically injected badges
+const badgeObserver = new MutationObserver(hideLovableBadge);
+badgeObserver.observe(document.documentElement, { childList: true, subtree: true });
