@@ -33,12 +33,9 @@ document.head.insertAdjacentHTML('beforeend', `
   </style>
 `);
 
-// ── Hide "Edit with Lovable" badge ──────────────────────────────────────────
+/* ── FALLBACK: JS badge hider (commented out — CSS #lovable-badge approach is active) ──
 // The badge is a Shadow DOM web component injected by Lovable's hosting script.
-// Standard CSS / querySelector cannot pierce shadow roots, so we must:
-//   1. Hide the host element by tag name / attribute patterns
-//   2. Inject a <style> directly into any shadow root that contains lovable links
-//   3. Fall back to hiding any visible fixed-positioned element carrying the URL
+// Uncomment this block if the CSS approach stops working.
 
 const LOVABLE_PATTERNS = ['lovable-badge', 'lovable-tagger', 'gpt-badge', 'lv-badge'];
 
@@ -50,7 +47,6 @@ const hideLovableBadge = () => {
       // 1. Hide by custom-element tag name matching known Lovable badge names
       if (LOVABLE_PATTERNS.some(p => tag.includes(p))) {
         el.style.setProperty('display', 'none', 'important');
-        // Also hide the parent to take sibling close-buttons with it
         if (el.parentElement && el.parentElement !== document.body) {
           el.parentElement.style.setProperty('display', 'none', 'important');
         }
@@ -61,12 +57,10 @@ const hideLovableBadge = () => {
       if (el.shadowRoot) {
         const shadowLink = el.shadowRoot.querySelector('a[href*="lovable"]');
         if (shadowLink) {
-          // Hide the host AND its parent container (which holds sibling close-button)
           el.style.setProperty('display', 'none', 'important');
           if (el.parentElement && el.parentElement !== document.body) {
             el.parentElement.style.setProperty('display', 'none', 'important');
           }
-          // Also inject CSS inside the shadow root for good measure
           if (!el.shadowRoot.querySelector('style[data-hider]')) {
             const s = document.createElement('style');
             s.setAttribute('data-hider', '1');
@@ -86,7 +80,6 @@ const hideLovableBadge = () => {
         src.includes('lovable')
       ) {
         el.style.setProperty('display', 'none', 'important');
-        // Walk up and hide the nearest fixed container
         let p = el.parentElement;
         while (p && p !== document.body) {
           if (['fixed', 'absolute'].includes(getComputedStyle(p).position)) {
@@ -97,17 +90,16 @@ const hideLovableBadge = () => {
         }
       }
 
-      // 4. Text-content fallback (for non-shadow plain injections)
+      // 4. Text-content fallback
       const text = (el.innerText || el.textContent || '').trim();
       if (text === 'Edit with Lovable' || text.includes('Edit with \u2764')) {
         el.style.setProperty('display', 'none', 'important');
       }
 
-    } catch (e) { /* ignore cross-origin or detached nodes */ }
+    } catch (e) {}
   });
 };
 
-// Run immediately and at staggered intervals
 hideLovableBadge();
 document.addEventListener('DOMContentLoaded', () => {
   hideLovableBadge();
@@ -118,7 +110,6 @@ window.addEventListener('load', () => {
   setTimeout(hideLovableBadge, 1000);
 });
 
-// Observe DOM mutations (badge may be re-injected after SPA navigation or hydration)
 const badgeObserver = new MutationObserver(hideLovableBadge);
 badgeObserver.observe(document.documentElement, { childList: true, subtree: true });
-
+── END FALLBACK ──────────────────────────────────────────────────────────── */

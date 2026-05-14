@@ -590,7 +590,7 @@ section {
   }
 }
 
-/* Hide Lovable Badge - Reddit Fix */
+/* ── Hide Lovable badge (Reddit approach) ── */
 #lovable-badge {
   display: none !important;
 }
