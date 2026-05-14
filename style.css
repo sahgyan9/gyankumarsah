@@ -589,3 +589,8 @@ section {
     display: none;
   }
 }
+
+/* Hide Lovable Badge - Reddit Fix */
+#lovable-badge {
+  display: none !important;
+}
