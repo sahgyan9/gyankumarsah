@@ -1,0 +1,7 @@
+Setup_CdSe_GQD_Work.png
+the image was created by me in the Blender. It includes the LED Holder and sample holder which i designed in Fusion 360 and 3D printed them.
+This helped to get reproducble data with stable system for repeated measurements to get rid of variable contact resistance
+
+Chip_carrier_for_holding_wafer.png
+the image contains the 5 cross 5 mm^2 silicon wafer with CdSe:GQD composite thing film. I have made
+a fine silver page contact and so on
