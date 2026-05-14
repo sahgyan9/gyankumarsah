@@ -1,0 +1,116 @@
+/* =============================================
+   GALLERY PAGE — clean card layout
+   ============================================= */
+
+/* Wider main container for gallery */
+.gallery-main {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Each image card ── */
+.gallery-card {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 3rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.gallery-card:first-child {
+  border-top: 1px solid var(--border);
+}
+
+/* Image container: fixed size, no cropping */
+.gallery-img-wrap {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* show the full image — no cropping */
+  display: block;
+}
+
+/* ── Text side ── */
+.gallery-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-top: 0.25rem;
+}
+
+.gallery-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.gallery-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.gallery-desc {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  line-height: 1.85;
+  margin-top: 0.4rem;
+}
+
+/* Tags row */
+.gallery-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+.gallery-tags li {
+  font-size: 0.7rem;
+  padding: 0.18rem 0.65rem;
+  border-radius: 99px;
+  background: var(--accent-lt);
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+/* Bottom note */
+.gallery-note {
+  margin-top: 2.5rem;
+  font-size: 0.8rem;
+  color: var(--border);
+  letter-spacing: 0.04em;
+  font-style: italic;
+  text-align: center;
+}
+
+/* ── Responsive ── */
+@media (max-width: 720px) {
+  .gallery-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .gallery-img-wrap {
+    aspect-ratio: 16 / 10;
+  }
+}

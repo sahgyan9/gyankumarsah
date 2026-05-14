@@ -1,0 +1,65 @@
+/* =============================================
+   BOOKS PAGE
+   ============================================= */
+
+.book-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+}
+
+.book-item:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.book-num {
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  color: var(--border);
+  padding-top: 0.25rem;
+  letter-spacing: 0.04em;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+  line-height: 1.4;
+}
+
+.book-author {
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.7rem;
+}
+
+.book-note {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+  line-height: 1.8;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .book-item {
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+  }
+
+  .book-num {
+    display: none;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work Gallery — Gyan Kumar Sah</title>
+  <meta name="description" content="Images from Gyan Kumar Sah's lab work and research — let the pictures speak." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="../index.html" class="nav-name">Gyan Sah</a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="work-gallery.html" class="nav-active">Work-gallery</a>
+      <a href="resources.html">Resources</a>
+      <a href="books.html">Books</a>
+
+      <a href="mailto:sahgyan9@gmail.com" class="nav-cta">Say hello →</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <p class="page-eyebrow">Lab &amp; beyond</p>
+    <h1 class="page-title">Work in Pictures</h1>
+    <p class="page-sub">Sometimes words are not enough. Here is what the work actually looks like.</p>
+  </header>
+
+  <!-- GALLERY -->
+  <main class="page-main gallery-main">
+
+    <!-- Card 1 -->
+    <article class="gallery-card">
+      <div class="gallery-img-wrap">
+        <img
+          src="../Images_Work/Setup_CdSe_GQD_Work.png"
+          alt="Custom 3D-rendered measurement setup for CdSe:GQD photodetector"
+          loading="lazy"
+        />
+      </div>
+      <div class="gallery-text">
+        <p class="gallery-label">Measurement Setup</p>
+        <h2 class="gallery-title">CdSe:GQD Photodetector Rig</h2>
+        <p class="gallery-desc">
+          I designed both the LED holder and sample stage in Fusion 360 and 3D-printed them in-house.
+          The fixed geometry eliminates variable contact resistance that made earlier free-hand setups
+          unreliable. This rendering was made in Blender for the research paper figure.
+        </p>
+        <ul class="gallery-tags">
+          <li>Blender</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="gallery-card">
+      <div class="gallery-img-wrap">
+        <img
+          src="../Images_Work/Chip_carrier_for_holding_wafer.png"
+          alt="5x5mm silicon wafer on chip carrier with silver paint contacts"
+          loading="lazy"
+        />
+      </div>
+      <div class="gallery-text">
+        <p class="gallery-label">Device Under Test</p>
+        <h2 class="gallery-title">CdSe:GQD Thin Film on Silicon</h2>
+        <p class="gallery-desc">
+          A 5 × 5 mm² silicon wafer coated with a CdSe:GQD composite thin film.
+          The silver paint contacts are applied by hand under a microscope — each contact
+          placed to ensure flat, repeatable electrical connection across every measurement run.
+        </p>
+        <ul class="gallery-tags">
+          <li>Thin Film</li>
+          <li>Silver Paint Contacts</li>
+
+        </ul>
+      </div>
+    </article>
+
+    <p class="gallery-note">More images will be added as the work progresses. Every photograph here is from a real experimental session — not stock.</p>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p class="footer-quote">"The quieter you become, the more you can hear."</p>
+    <p class="footer-copy">© 2026 Gyan Kumar Sah · <a href="../index.html">Home</a></p>
+  </footer>
+
+</body>
+</html>

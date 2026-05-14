@@ -14,7 +14,7 @@
   /* warm off-white, like paper */
   --ink: #1a1a18;
   /* near-black, soft */
-  --ink-muted: #6b6860;
+  --ink-muted: #42413f;
   /* secondary text */
   --accent: #2a5c8f;
   /* quiet blue — trustworthy, not flashy */
@@ -26,7 +26,7 @@
   --font-serif: 'Playfair Display', Georgia, serif;
 
   --max-w: 780px;
-  --nav-h: 64px;
+  --nav-h: 45px;
 }
 
 html {
@@ -68,6 +68,7 @@ img {
   padding: 0 clamp(1.5rem, 5vw, 3rem);
   background: rgba(248, 246, 241, 0.88);
   backdrop-filter: blur(10px);
+  border-top: 3px solid var(--accent);
   border-bottom: 1px solid var(--border);
   z-index: 100;
   transition: box-shadow 0.3s;
@@ -196,6 +197,28 @@ img {
   font-size: 1.3rem;
   letter-spacing: 0.04em;
   color: var(--ink-muted);
+}
+
+/* Gallery CTA button */
+.hero-gallery-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.55rem 1.2rem;
+  border-radius: 2px;
+  letter-spacing: 0.03em;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 0.7s 0.55s ease forwards;
+  transition: background 0.2s, color 0.2s;
+}
+
+.hero-gallery-btn:hover {
+  background: var(--accent);
+  color: #fff;
 }
 
 .hero-scroll-hint {
