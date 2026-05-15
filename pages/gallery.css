@@ -114,3 +114,8 @@
     aspect-ratio: 16 / 10;
   }
 }
+
+/* ── Hide Lovable badge (Reddit approach) ── */
+#lovable-badge {
+  display: none !important;
+}

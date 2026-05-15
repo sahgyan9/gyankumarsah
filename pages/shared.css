@@ -173,3 +173,8 @@ img { display: block; max-width: 100%; }
   .nav-links a:not(.nav-cta):not(.nav-active) { display: none; }
   .page-header { padding-top: calc(var(--nav-h) + 3rem); }
 }
+
+/* ── Hide Lovable badge (Reddit approach) ── */
+#lovable-badge {
+  display: none !important;
+}
