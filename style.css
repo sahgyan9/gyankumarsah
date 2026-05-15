@@ -600,6 +600,8 @@ section {
   cursor: pointer;
   padding: 4px;
   z-index: 101;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-burger span {
