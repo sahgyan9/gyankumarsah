@@ -266,9 +266,7 @@ section {
   border-bottom: 1px solid var(--border);
 }
 
-.acc-item:first-child {
-  border-top: 1px solid var(--border);
-}
+
 
 /* Remove default triangle marker */
 .acc-item>summary {
@@ -290,20 +288,15 @@ section {
   user-select: none;
 }
 
-.acc-meta {
+.acc-header .work-tags {
   grid-column: 1;
-  grid-row: 1;
-  font-size: 0.72rem;
-  color: var(--accent);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 0.3rem;
+  grid-row: 2;
+  margin-top: 0.4rem;
 }
 
 .acc-title {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
   font-size: 1rem;
   font-weight: 500;
   color: var(--ink);

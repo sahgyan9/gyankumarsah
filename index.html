@@ -30,7 +30,7 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <span class="nav-name">Gyan Sah</span>
+    <a href="index.html" class="nav-name">Gyan Sah</a>
     <button class="nav-burger" id="nav-burger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -48,7 +48,10 @@
   <section id="hero">
     <div class="hero-content">
       <div class="hero-inner">
-        <p class="hero-location">Nepal</p>
+        <p class="hero-location" style="display: flex; align-items: center; gap: 6px;">
+          
+          <img src="https://flagcdn.com/np.svg" alt="Nepal Flag" style="height: 3em; width: auto; vertical-align: middle;">
+        </p>
         <h1 class="hero-name">Gyan Kumar Sah</h1>
 
         <blockquote class="hero-quote">
@@ -76,8 +79,12 @@
 
         <details class="acc-item">
           <summary class="acc-header">
-            <div class="acc-meta">Device Physics Lab · SRM University, AP</div>
-            <h3 class="acc-title">CdSe / Graphene Quantum Dot Photodetector</h3>
+            <h3 class="acc-title">Investigating and Improving Photoresponse in 
+              CdSe/Graphene Quantum Dot Hybrid System
+            </h3>
+            <div class="work-tags">
+              <span>Device Physics Lab · SRM University, AP</span>
+            </div>
             <span class="acc-arrow">↓</span>
           </summary>
           <div class="acc-body">
@@ -88,58 +95,72 @@
               <li>Measured time response and modulation bandwidth.</li>
             </ul>
             <div class="work-tags">
-              <span>LabVIEW</span><span>Python</span><span>3D Printing</span><span>Keithley SMU</span><span>Thorlab LED Driver</span><span>OMM-6810B Power Meter</span>
+              <span>LabVIEW</span><span>MFLI Lock-in</span><span>Keithley SMU</span><span>Thorlab LED Driver</span><span>OMM-6810B Power Meter</span><span>Python</span><span>3D Printing</span>
             </div>
           </div>
         </details>
 
         <details class="acc-item">
           <summary class="acc-header">
-            <div class="acc-meta">Exotic Interface Lab · SRM University, AP</div>
             <h3 class="acc-title">Optically Controlled Ferromagnetic Thin Film</h3>
+            <div class="work-tags">
+              <span>Exotic Interface Lab · SRM University, AP</span>
+            </div>
             <span class="acc-arrow">↓</span>
           </summary>
           <div class="acc-body">
-            <p>Deposited 30 nm Cobalt on glass substrate using RF sputtering with a masked Hall geometry. Performed
-              anomalous Hall effect measurements with a Zurich MFLI lock-in amplifier to study optical control of
-              ferromagnetism.</p>
+            <p>Optimzed sputtering power such as base pressure and power to deposit 30 nm Cobalt on glass substrate with a masked Hall geometry.
+               Performed anomalous Hall effect measurements with a Zurich MFLI lock-in amplifier but due to low magnetic field and 
+               noise we couldn't get anamolous hall effect behaviour. Hence, the project is discontinued.</p>
             <div class="work-tags">
-              <span>RF Sputtering</span><span>Hall Effect</span><span>Thin Films</span>
+              <span>Sputtering</span><span>Hall Effect</span><span>Thin Films</span>
             </div>
           </div>
         </details>
 
+        
         <details class="acc-item">
           <summary class="acc-header">
-            <div class="acc-meta">Exotic Interface Lab · SRM University, AP</div>
+            <h3 class="acc-title">Green Hydrogen Electrolyzer &amp; Fuel Cell Engineering</h3>
+            <div class="work-tags">
+              <span>Shakti Photon Solutions · Guntur, India — Paid Internship</span>
+            </div>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <ul class="acc-achievements">
+              <li>Designed different parts using Fusion 360 and manufactured them using CNC and 3D printer across materials like steel, graphite, acrylic, and PTFE/Teflon.</li>
+              <li>Fabricated MEAs using an ultrasonic spray nozzle and hot pressing.</li>
+              <li>Solely responsible for building an Arduino-based Hydrogen Leakage Detection System using an MQ-8 sensor with custom 3D-printed housing.</li>
+              <li>Assigned to design a 30 × 30 cm electrolyzer for a large industry order.</li>
+              <li>Delivered and set up the BOP of a Fuel Cell at IIT Delhi, and trained their staff on how to operate it.</li>
+            </ul>
+            <p style="margin-top: 0.8rem; font-size: 0.88rem; color: var(--ink-muted); line-height: 1.8;">
+              Gained hands-on experience with engineering challenges, mechanical components (valves, gaskets, connectors), and industrial electrical systems. This experience directly fed into setting up the Cryogenic System for Low-Temperature Measurements.
+            </p>
+            <div class="work-tags">
+              <span>Fusion 360</span><span>CNC</span><span>3D Printing</span><span>MEA Fabrication</span><span>Arduino</span><span>PEM/AEM</span><span>MQ-8 Sensor</span>
+            </div>
+          </div>
+        </details>
+        
+        <details class="acc-item">
+          <summary class="acc-header">
             <h3 class="acc-title">Cryogenic System Setup for Low-Temperature Measurements</h3>
+            <div class="work-tags">
+              <span>Low Temperature Physics Lab· SRM University, AP</span>
+            </div>
             <span class="acc-arrow">↓</span>
           </summary>
           <div class="acc-body">
             <p>CNC-machined an aluminium connector to maintain 10⁻³ mbar pressure. Wrote LabVIEW programs interfacing a
-              Keithley SMU and DC2200 LED driver to fully automate measurements at cryogenic temperatures.</p>
+              Keithley SMU and Temperature Controller to fully automate measurements at cryogenic temperatures. 
+              I learned about PID controller here.</p>
             <div class="work-tags">
-              <span>CNC</span><span>LabVIEW</span><span>Cryogenics</span><span>Vacuum Systems</span>
+              <span>CNC</span><span>PID</span><span>Cryogenics</span><span>Vacuum Systems</span>
             </div>
           </div>
         </details>
-
-        <details class="acc-item">
-          <summary class="acc-header">
-            <div class="acc-meta">Shakti Photon Solutions · Guntur, India — Paid Internship</div>
-            <h3 class="acc-title">Green Hydrogen Electrolyzer &amp; Fuel Cell Engineering</h3>
-            <span class="acc-arrow">↓</span>
-          </summary>
-          <div class="acc-body">
-            <p>Designed and manufactured electrolyzer parts using Fusion 360, CNC, and 3D printing across materials like
-              PTFE, graphite, and steel. Fabricated MEAs with an ultrasonic spray nozzle. Built an Arduino hydrogen-leak
-              detection system. Delivered and commissioned a fuel cell BOP at IIT Delhi.</p>
-            <div class="work-tags">
-              <span>CNC</span><span>3D Printing</span><span>PEM/AEM</span><span>MEA Fabrication</span><span>Arduino</span>
-            </div>
-          </div>
-        </details>
-
       </div>
     </div>
   </section>
@@ -155,57 +176,100 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="section-inner">
-      <h2 class="section-label">Projects &amp; Experiments</h2>
+      <h2 class="section-label">Projects &amp; Hackathon</h2>
 
-      <div class="projects-list">
+      <div class="accordion">
 
-        <div class="project-row">
-          <div class="project-left">
-            <span class="project-num">01</span>
+        <details class="acc-item">
+          <summary class="acc-header">
+            <h3 class="acc-title">Quantum Double Shield Protocol for Secure Communication</h3>
+            <div class="work-tags">
+              <span>Hackathon</span>
+            </div>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <p>We showcased a quantum-enhanced secure communication protocol with adaptive authentication using QRNG, BB84 Protocol
+              built with Qiskit simulators. Won 3rd place at the Amaravati Quantum Valley Hackathon.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="https://qdsp.lovable.app/" target="_blank" rel="noopener" class="project-link">View prototype →</a>
+              <span style="color: var(--border);">|</span>
+              <a href="Coming Soon" target="_blank" rel="noopener" class="project-link">Read Blog →</a>
+            </div>
           </div>
-          <div class="project-right">
-            <h3>Quantum Double Shield Protocol</h3>
-            <p>A quantum-enhanced secure communication protocol with adaptive authentication, built with Qiskit
-              simulators. Won 3rd place at the Amaravati Quantum Valley Hackathon.</p>
-            <a href="https://qdsp.lovable.app/" target="_blank" rel="noopener" class="project-link">View
-              prototype →</a>
-          </div>
-        </div>
+        </details>
 
-        <div class="project-row">
-          <div class="project-left">
-            <span class="project-num">02</span>
+        <details class="acc-item">
+          <summary class="acc-header">
+            <h3 class="acc-title">Built Peer-to-Peer Learning Platform</h3>
+            <div class="work-tags">
+              <span>Self-Project</span>
+              <a href="https://friendly-learning-srmap.lovable.app/" target="_blank" rel="noopener" style="text-decoration: none;" onclick="event.stopPropagation()">
+                <span style="color: var(--accent); border-color: var(--accent); cursor: pointer;">Visit ↗</span>
+              </a>
+            </div>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <p>A peer-to-peer mentoring and academic collaboration platform for students. Self-initiated project to make
+              connecting with peers, finding hackathon partner, or learning partner, or like minded students within SRMAP
+              more accessible.</p>
+            <div style="margin-top: 1rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="https://friendly-learning-srmap.lovable.app/" target="_blank" rel="noopener" class="project-link">Visit site →</a>
+              <span style="color: var(--border);">|</span>
+              <a href="https://friendly-learning-srmap.lovable.app/about" target="_blank" rel="noopener" class="project-link">Read Blog →</a>
+            </div>
           </div>
-          <div class="project-right">
-            <h3>Friendly Learning — SRMAP</h3>
-            <p>A peer-to-peer mentoring and academic collaboration platform for students. Self-initiated to make
-              learning more accessible and less transactional.</p>
-            <a href="https://friendly-learning-srmap.lovable.app/" target="_blank" rel="noopener"
-              class="project-link">Visit site →</a>
-          </div>
-        </div>
+        </details>
 
-        <div class="project-row">
-          <div class="project-left">
-            <span class="project-num">03</span>
+        <details class="acc-item">
+          <summary class="acc-header">
+            <h3 class="acc-title">Built Nepali Village Calculator</h3>
+            <div class="work-tags">
+              <span>Self-Project</span>
+              <a href="https://village-calculator.vercel.app" target="_blank" rel="noopener" style="text-decoration: none;" onclick="event.stopPropagation()">
+                <span style="color: var(--accent); border-color: var(--accent); cursor: pointer;">Visit ↗</span>
+              </a>
+            </div>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <p>A free Nepali compound interest calculator using Bikram Sambat (BS) dates. Designed to help with village loans and personal lending in Nepal. Currently ranking as the #1 search result on Google for "village calculator nepal"!</p>
+            <div style="margin-top: 1rem;">
+              <a href="https://village-calculator.vercel.app" target="_blank" rel="noopener" class="project-link">Visit site →</a>
+            </div>
           </div>
-          <div class="project-right">
-            <h3>Temperature-Controlled Fan System</h3>
-            <p>An automatic fan controller built from first principles using a BC107 transistor, thermistor, and a
-              3D-printed housing — designed to be functional, not just a demo.</p>
-          </div>
-        </div>
+        </details>
 
-        <div class="project-row">
-          <div class="project-left">
-            <span class="project-num">04</span>
+        <details class="acc-item">
+          <summary class="acc-header">
+            <h3 class="acc-title">Temperature-Controlled Fan System</h3>
+            <div class="work-tags">
+              <span>Academic-Project</span>
+            </div>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
+            <p>In this project we built an automatic temperature-controlled fan system from first principles to improve heat management efficiency. Using a BC107 transistor, a thermistor, and a custom 3D-printed housing, the system automatically activates a DC fan when temperatures exceed a specific threshold. Designed to be functional, not just a demo, it often comes in handy for my labmates 😅.</p>
+            <div style="margin-top: 1rem;">
+              <a href="https://drive.google.com/file/d/1ThnY_9eV22wsGemyn8L3KC71c8j-S5L3/view?usp=sharing" target="_blank" rel="noopener" class="project-link">View PDF →</a>
+            </div>
           </div>
-          <div class="project-right">
-            <h3>Post-Quantum Cryptography Study</h3>
+        </details>
+
+        <details class="acc-item">
+          <summary class="acc-header">
+            <h3 class="acc-title">Post-Quantum Cryptography Study</h3>
+            <div class="work-tags">
+              <span>Academic-Project</span>
+            </div>
+            <span class="acc-arrow">↓</span>
+          </summary>
+          <div class="acc-body">
             <p>Explored Shor's Algorithm, quantum superposition, and the implications for existing cryptographic systems
               as part of a supervised academic project.</p>
           </div>
-        </div>
+        </details>
 
       </div>
     </div>
@@ -226,18 +290,18 @@
       <div class="about-right">
         <p>
           I grew up in Mahottari, Nepal — curious enough to try making soap out of foam and
-          getting scolded by my mom for it. That curiosity led me to physics, and physics
+          getting scolded by my mom for it, even tried to make hot air ballon using plastic, all failed
+          project 😥. But that curiosity led me to physics, and physics
           led me to labs, instruments, and a deep belief that science should serve people.
         </p>
         <p>
           I am currently a third-year Physics student at SRM University, Andhra Pradesh,
           on an 80% merit scholarship. My work sits at the intersection of experimental
-          condensed matter physics and quantum technology. I do not just study things —
-          I build and measure them.
+          condensed matter physics and quantum technology. 
         </p>
         <p>
-          Outside the lab I read philosophy — Siddhartha, The Alchemist, The Untethered Soul,
-          The Peaceful Warrior. I believe the best engineers are also the most reflective ones.
+          Outside the lab I read self-help book — Inner Engineering, Siddhartha, The Alchemist, The Untethered Soul,
+          The Peaceful Warrior... <a href="books.html" style="color: var(--accent)">More Here..</a>
         </p>
 
         <div class="about-links">
@@ -256,6 +320,7 @@
       "The journey itself is the destination."
     </p>
     <p class="footer-copy">© 2026 Gyan Kumar Sah</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
