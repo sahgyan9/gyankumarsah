@@ -34,18 +34,21 @@
   </nav>
 
   <!-- PAGE HEADER -->
-  <header class="page-header">
-    <p class="page-eyebrow">What I read</p>
-    <h1 class="page-title">Books I Love 🥰</h1>
-    <p class="page-sub">These are not just books — they are turning points. Each one changed something in the way I see
-      myself or the world.</p>
+  <header class="page-header" style="position: relative;">
+    <div style="padding-right: 180px;">
+      <p class="page-eyebrow">What I read</p>
+      <h1 class="page-title">Books I Love 🥰</h1>
+      <p class="page-sub">These are not just books — they are turning points. Each one changed something in the way I see
+        myself or the world.</p>
+    </div>
+    <button id="btn-pick-1" class="btn-pick" style="position: absolute; bottom: 0; right: clamp(1.5rem, 5vw, 3rem);">My 1st Pick for You ⬇</button>
   </header>
 
   <!-- BOOK LIST -->
   <main class="page-main">
     <ol class="book-list">
 
-      <li class="book-item">
+      <li class="book-item" id="book-monk">
         <span class="book-num">01</span>
         <img src="https://m.media-amazon.com/images/I/71AiT9UlPyL._UF1000,1000_QL80_.jpg" alt="The Monk Who Sold His Ferrari" class="book-cover" loading="lazy" />
         <div class="book-body">
@@ -134,11 +137,14 @@
         </div>
       </li>
 
-      <li class="book-item">
+      <li class="book-item" id="book-untethered-soul">
         <span class="book-num">07</span>
         <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1354898395i/1963638.jpg" alt="The Untethered Soul" class="book-cover" loading="lazy" />
-        <div class="book-body">
-          <h2 class="book-title">The Untethered Soul <span class="book-dots">...</span></h2>
+        <div class="book-body" style="position: relative;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
+            <h2 class="book-title">The Untethered Soul <span class="book-dots">...</span></h2>
+            <button id="btn-pick-2" class="btn-pick hidden">My 2nd Pick for You ⬇</button>
+          </div>
           <p class="book-author">Michael A. Singer</p>
           <span class="book-date book-date--ongoing">Started · Apr 2025</span>
           <p class="book-note">
@@ -190,6 +196,7 @@
   </footer>
 
   <script src="nav.js"></script>
+  <script src="books.js"></script>
 </body>
 
 </html>
