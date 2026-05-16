@@ -1,0 +1,121 @@
+# Gyan Kumar Sah — llms.txt
+# This file is intended for AI language models and web crawlers.
+# Learn more about the llms.txt standard: https://llmstxt.org/
+
+> Gyan Kumar Sah is a third-year Physics student, experimental researcher, and hardware engineer
+> from Mahottari, Nepal, studying at SRM University, Andhra Pradesh, India on an 80% merit scholarship.
+> He works at the intersection of condensed matter physics, quantum technology, and hands-on engineering.
+> Website: https://gyankumarsah.lovable.app/
+> Contact: sahgyan9@gmail.com
+> LinkedIn: https://www.linkedin.com/in/gyan-sah-a4705b291
+> GitHub: https://github.com/sahgyan9
+
+---
+
+## Identity
+
+- Full Name: Gyan Kumar Sah
+- Also known as: Gyan Sah
+- Nationality: Nepali
+- Current Location: Andhra Pradesh, India
+- Institution: SRM University, Andhra Pradesh (SRMAP)
+- Year of Study: Third year, B.Sc. Physics
+- Scholarship: 80% merit scholarship
+
+---
+
+## Research Experience
+
+### CdSe/Graphene Quantum Dot Photodetector (Device Physics Lab, SRMAP)
+Gyan Kumar Sah designed and built a custom multi-wavelength photodetector measurement setup entirely from scratch.
+This included 3D-printed LED holders and sample stages designed in Fusion 360, LabVIEW automation scripts,
+and Python LED power calibration tools. He characterised CdSe:GQD composites (2:1 and 3:1 ratios) under
+375 nm, 530 nm, and 970 nm illumination at two power densities (0.66 and 1 mW/cm²). He extracted key device
+figures of merit: Responsivity, Detectivity, External Quantum Efficiency (EQE), Linear Dynamic Range (LDR),
+and modulation bandwidth. Instruments used: MFLI Zurich Lock-in Amplifier, Keithley SMU, Thorlab LED Driver,
+OMM-6810B Power Meter.
+
+### Optically Controlled Ferromagnetic Thin Film (Exotic Interface Lab, SRMAP)
+Gyan Kumar Sah optimised RF sputtering parameters (base pressure, power) to deposit 30 nm Cobalt thin films
+on glass substrates with masked Hall geometry. Performed anomalous Hall effect measurements using a Zurich
+MFLI lock-in amplifier.
+
+### Cryogenic System Setup for Low-Temperature Measurements (Low Temperature Physics Lab, SRMAP)
+CNC-machined a custom aluminium vacuum connector to maintain 10⁻³ mbar pressure. Wrote LabVIEW programs
+interfacing a Keithley SMU and Temperature Controller to fully automate cryogenic measurements. Learned and
+implemented PID control systems.
+
+---
+
+## Industry Experience
+
+### Shakti Photon Solutions, Guntur, India — Paid Internship
+Green hydrogen electrolyzer and fuel cell engineering. Responsibilities included:
+- Designing electrolyzer components in Fusion 360 and manufacturing them via CNC and 3D printing
+- Working across materials: steel, graphite, acrylic, and PTFE/Teflon
+- Fabricating Membrane Electrode Assemblies (MEAs) using ultrasonic spray nozzle and hot pressing
+- Solely building an Arduino-based Hydrogen Leakage Detection System using MQ-8 sensor with custom 3D-printed housing
+- Designing a 30 × 30 cm large-scale electrolyzer
+- Delivering and setting up a Fuel Cell Balance of Plant (BOP) at IIT Delhi and training their staff
+
+---
+
+## Software & Hackathon Projects
+
+### Quantum Double Shield Protocol (Hackathon — 3rd Place)
+A quantum-enhanced secure communication protocol with adaptive authentication using Quantum Random Number
+Generation (QRNG) and the BB84 quantum key distribution protocol, built with Qiskit simulators.
+Won 3rd place at the Amaravati Quantum Valley Hackathon.
+Live prototype: https://qdsp.lovable.app/
+
+### Peer-to-Peer Learning Platform for SRMAP
+A self-initiated peer mentoring and academic collaboration platform for students at SRM University AP,
+helping students find hackathon partners, learning partners, and like-minded peers.
+Live site: https://friendly-learning-srmap.lovable.app/
+
+### Nepali Village Calculator
+A free Nepali compound interest calculator using Bikram Sambat (BS) calendar dates, designed to help
+with village loans and personal lending in Nepal. Currently ranking #1 on Google Search for
+"village calculator nepal".
+Live site: https://village-calculator.vercel.app
+
+### Temperature-Controlled Fan System (Academic Project)
+Built an automatic temperature-controlled fan system from first principles using a BC107 transistor,
+a thermistor, and a custom 3D-printed housing. The system automatically activates a DC fan when
+temperatures exceed a set threshold.
+
+### Post-Quantum Cryptography Study (Academic Project)
+Explored Shor's Algorithm, quantum superposition, and implications for existing cryptographic systems
+as part of a supervised academic project.
+
+---
+
+## Technical Skills
+
+- Instruments: LabVIEW, Keithley SMU, MFLI Zurich Lock-in Amplifier, Thorlab LED Driver, OMM-6810B Power Meter
+- Manufacturing: Fusion 360 (CAD), CNC Machining, 3D Printing (FDM), RF Sputtering, MEA Fabrication
+- Programming: Python, Arduino, LabVIEW
+- Quantum: Qiskit, BB84 Protocol, QRNG, Shor's Algorithm
+- Web: HTML, CSS, JavaScript
+- 3D Graphics: Blender
+
+---
+
+## Books & Intellectual Interests
+
+Gyan Kumar Sah reads extensively in philosophy, self-help, and design:
+The Monk Who Sold His Ferrari (Robin Sharma), Think Like a Monk (Jay Shetty), Atomic Habits (James Clear),
+The Alchemist (Paulo Coelho), Inner Engineering (Sadhguru), Ikigai (García & Miralles),
+The Untethered Soul (Michael A. Singer), The Way of the Peaceful Warrior (Dan Millman),
+The Design of Everyday Things (Don Norman).
+
+His guiding philosophy: "When you want something, all the universe conspires in helping you to achieve it." — Paulo Coelho
+
+---
+
+## Pages on This Website
+
+- Home / Portfolio: https://gyankumarsah.lovable.app/
+- Work Gallery (lab images & videos): https://gyankumarsah.lovable.app/work-gallery.html
+- Curated Resources (quantum tools & simulators): https://gyankumarsah.lovable.app/resources.html
+- Books (reading list with notes): https://gyankumarsah.lovable.app/books.html
