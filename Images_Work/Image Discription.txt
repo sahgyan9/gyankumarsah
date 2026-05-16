@@ -5,3 +5,7 @@ This helped to get reproducble data with stable system for repeated measurements
 Chip_carrier_for_holding_wafer.png
 the image contains the 5 cross 5 mm^2 silicon wafer with CdSe:GQD composite thing film. I have made
 a fine silver page contact and so on
+
+Automatic_Temperature_Controlled_Fan.png and .mp4
+this image video contains pic of my system that I built but has been edited with Gemini but it looks like actual product. Hence I am confident to
+upload it in website with small description. make be you look into image and you will know...
