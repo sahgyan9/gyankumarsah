@@ -115,10 +115,7 @@
   }
 }
 
-/* ── Hide Lovable badge (Reddit approach) ── */
-#lovable-badge {
-  display: none !important;
-}
+
 
 /* =============================================
    PICKS & HIGHLIGHTING

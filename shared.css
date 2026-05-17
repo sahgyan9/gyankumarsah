@@ -250,8 +250,4 @@ body:has(#nav-menu:target) .nav-dismiss {
 
   .page-header { padding-top: calc(var(--nav-h) + 3rem); }
 }
-
-/* ── Hide Lovable badge (Reddit approach) ── */
-#lovable-badge {
-  display: none !important;
-}
+

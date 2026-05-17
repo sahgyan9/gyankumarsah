@@ -691,8 +691,4 @@ body:has(#nav-menu:target) .nav-dismiss {
     display: none;
   }
 }
-
-/* ── Hide Lovable badge (Reddit approach) ── */
-#lovable-badge {
-  display: none !important;
-}
+
