@@ -3,6 +3,7 @@ const navLinks = document.querySelector('.nav-links');
 
 if (burger && navLinks) {
   function toggleMenu(e) {
+    e.preventDefault(); // Stop anchor tag from jumping to top
     e.stopPropagation(); // Stop click from reaching document immediately
     burger.classList.toggle('is-open');
     navLinks.classList.toggle('is-open');
