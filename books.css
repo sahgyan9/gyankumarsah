@@ -136,6 +136,8 @@
   cursor: pointer;
   transition: all 0.3s ease;
   white-space: nowrap;
+  position: relative;
+  z-index: 200;
 }
 
 .btn-pick:hover {

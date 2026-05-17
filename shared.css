@@ -203,9 +203,11 @@ nav:has(#nav-menu:target) .nav-burger span:nth-child(3) { transform: translateY(
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 98;
+  pointer-events: none;
 }
 body:has(#nav-menu:target) .nav-dismiss {
   display: block;
+  pointer-events: auto;
 }
 
 @media (max-width: 640px) {
