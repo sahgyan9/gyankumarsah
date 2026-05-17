@@ -1,11 +1,9 @@
-// Hamburger menu toggle — iOS Safari compatible
 const burger = document.getElementById('nav-burger');
 const navLinks = document.querySelector('.nav-links');
 
 if (burger && navLinks) {
   function toggleMenu(e) {
-    // preventDefault stops iOS from firing a ghost click after touchend
-    e.preventDefault();
+    e.stopPropagation(); // Stop click from reaching document immediately
     burger.classList.toggle('is-open');
     navLinks.classList.toggle('is-open');
   }
@@ -15,22 +13,16 @@ if (burger && navLinks) {
     navLinks.classList.remove('is-open');
   }
 
-  // touchend handles iPhone; click handles desktop
-  burger.addEventListener('touchend', toggleMenu, { passive: false });
+  // Modern mobile browsers don't have click delays if viewport meta is set.
+  // Using pure 'click' is much more reliable than mixing touchend and click.
   burger.addEventListener('click', toggleMenu);
 
-  // Close when a nav link is tapped/clicked
+  // Close when a nav link is clicked
   navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('touchend', closeMenu);
     a.addEventListener('click', closeMenu);
   });
 
-  // Close when tapping/clicking outside the nav on iOS and desktop
-  document.addEventListener('touchend', (e) => {
-    if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
-      closeMenu();
-    }
-  });
+  // Close when clicking outside the nav
   document.addEventListener('click', (e) => {
     if (!burger.contains(e.target) && !navLinks.contains(e.target)) {
       closeMenu();
