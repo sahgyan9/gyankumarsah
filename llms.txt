@@ -5,7 +5,7 @@
 > Gyan Kumar Sah is a third-year Physics student, experimental researcher, and hardware engineer
 > from Mahottari, Nepal, studying at SRM University, Andhra Pradesh, India on an 80% merit scholarship.
 > He works at the intersection of condensed matter physics, quantum technology, and hands-on engineering.
-> Website: https://gyankumarsah.lovable.app/
+> Website: https://www.gyankumarsah.com.np/
 > Contact: sahgyan9@gmail.com
 > LinkedIn: https://www.linkedin.com/in/gyan-sah-a4705b291
 > GitHub: https://github.com/sahgyan9
@@ -115,7 +115,7 @@ His guiding philosophy: "When you want something, all the universe conspires in 
 
 ## Pages on This Website
 
-- Home / Portfolio: https://gyankumarsah.lovable.app/
-- Work Gallery (lab images & videos): https://gyankumarsah.lovable.app/work-gallery.html
-- Curated Resources (quantum tools & simulators): https://gyankumarsah.lovable.app/resources.html
-- Books (reading list with notes): https://gyankumarsah.lovable.app/books.html
+- Home / Portfolio: https://www.gyankumarsah.com.np/
+- Work Gallery (lab images & videos): https://www.gyankumarsah.com.np/work-gallery.html
+- Curated Resources (quantum tools & simulators): https://www.gyankumarsah.com.np/resources.html
+- Books (reading list with notes): https://www.gyankumarsah.com.np/books.html
