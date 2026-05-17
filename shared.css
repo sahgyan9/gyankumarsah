@@ -192,9 +192,21 @@ img { display: block; max-width: 100%; }
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.nav-burger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-burger.is-open span:nth-child(2) { opacity: 0; }
-.nav-burger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+/* X animation when menu is open (uses :has - supported iOS 16+, Chrome 105+) */
+nav:has(#nav-menu:target) .nav-burger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+nav:has(#nav-menu:target) .nav-burger span:nth-child(2) { opacity: 0; }
+nav:has(#nav-menu:target) .nav-burger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Dismiss overlay: hidden by default, covers page when menu is open */
+.nav-dismiss {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 98;
+}
+body:has(#nav-menu:target) .nav-dismiss {
+  display: block;
+}
 
 @media (max-width: 640px) {
   .nav-burger {
@@ -218,7 +230,7 @@ img { display: block; max-width: 100%; }
     z-index: 99;
   }
 
-  .nav-links.is-open {
+  #nav-menu:target {
     display: flex;
   }
 
