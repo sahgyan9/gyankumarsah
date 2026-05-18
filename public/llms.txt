@@ -2,7 +2,7 @@
 # This file is intended for AI language models and web crawlers.
 # Learn more about the llms.txt standard: https://llmstxt.org/
 
-> Gyan Kumar Sah is a third-year Physics student, experimental researcher, and hardware engineer
+> Gyan Kumar Sah is a fourth-year Physics student, experimental researcher, and hardware engineer
 > from Mahottari, Nepal, studying at SRM University, Andhra Pradesh, India on an 80% merit scholarship.
 > He works at the intersection of condensed matter physics, quantum technology, and hands-on engineering.
 > Website: https://www.gyankumarsah.com.np/
@@ -19,7 +19,7 @@
 - Nationality: Nepali
 - Current Location: Andhra Pradesh, India
 - Institution: SRM University, Andhra Pradesh (SRMAP)
-- Year of Study: Third year, B.Sc. Physics
+- Year of Study: Fourth year, B.Sc. Physics
 - Scholarship: 80% merit scholarship
 
 ---
@@ -62,6 +62,9 @@ Green hydrogen electrolyzer and fuel cell engineering. Responsibilities included
 
 ## Software & Hackathon Projects
 
+### Personal AI Assistant: Email-to-Calendar Automation & Mobile App
+Built a fully autonomous smart agent using Google Apps Script and the Mistral AI API to extract actionable event details from inbox emails and log them into a relational database. Developed a zero-code mobile frontend using Google AppSheet with swipe-to-approve gestures that automatically synchronize with Google Calendar.
+
 ### Quantum Double Shield Protocol (Hackathon — 3rd Place)
 A quantum-enhanced secure communication protocol with adaptive authentication using Quantum Random Number
 Generation (QRNG) and the BB84 quantum key distribution protocol, built with Qiskit simulators.
@@ -74,15 +77,11 @@ helping students find hackathon partners, learning partners, and like-minded pee
 Live site: https://friendly-learning-srmap.lovable.app/
 
 ### Nepali Village Calculator
-A free Nepali compound interest calculator using Bikram Sambat (BS) calendar dates, designed to help
-with village loans and personal lending in Nepal. Currently ranking #1 on Google Search for
-"village calculator nepal".
+A free Nepali compound interest calculator using Bikram Sambat (BS) calendar dates, built because there was no tool to help his mom calculate interest the way it's done in Nepali villages. Currently ranking #1 on Google Search for "village calculator nepal".
 Live site: https://village-calculator.vercel.app
 
 ### Temperature-Controlled Fan System (Academic Project)
-Built an automatic temperature-controlled fan system from first principles using a BC107 transistor,
-a thermistor, and a custom 3D-printed housing. The system automatically activates a DC fan when
-temperatures exceed a set threshold.
+Built an automatic temperature-controlled fan system using analog circuits to improve heat management efficiency. Using a BC107 transistor, a thermistor, and a custom 3D-printed housing, the system automatically activates a DC fan when temperatures exceed a set threshold.
 
 ### Post-Quantum Cryptography Study (Academic Project)
 Explored Shor's Algorithm, quantum superposition, and implications for existing cryptographic systems

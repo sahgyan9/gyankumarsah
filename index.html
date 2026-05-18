@@ -73,9 +73,14 @@
           <cite>— Paulo Coelho, The Alchemist</cite>
         </blockquote>
 
-        <a href="work-gallery.html" class="hero-gallery-btn" id="btn-gallery">
-          See my work in pictures →
-        </a>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="work-gallery.html" class="hero-gallery-btn" id="btn-gallery" style="margin-top: 0;">
+            See my work in pictures →
+          </a>
+          <a href="#about" class="hero-gallery-btn" id="btn-about" style="margin-top: 0; background: transparent; color: var(--accent); box-shadow: none;">
+            About Me ↓
+          </a>
+        </div>
       </div>
       <div class="hero-image-wrapper">
         <img src="profile.jpeg" alt="Gyan Kumar Sah" class="hero-photo-right" />
@@ -388,26 +393,32 @@
 
       <div class="about-right">
         <p>
-          I grew up in small village of Nepal — sitting silently in my childhood used to make to think ideas like 
-           get soap out of foam, or make hot air ballon using plastic which I had watched on movies 
-           (simply tyring to think how and tried using plastic), used to play electronics and i 
-           remember getting shock so many times. But that curiosity led me to physics, and physics
-          led me to labs, instruments, and a deep belief that science should serve people.
+          I grew up in a small village in Nepal. As a quiet kid, my mind was always racing with ideas—trying to extract soap back out of foam, attempting to build hot air balloons from plastic bags I’d seen in movies, and tinkering with electronics (which usually just resulted in me getting shocked). But that raw curiosity led me to physics, and physics led me to labs, instruments, and a deep belief that science should serve people.
         </p>
         <p>
           I am currently a fourth-year undergraduate Physics student at SRM University, Andhra Pradesh,
           on an 80% merit scholarship. My work sits at the intersection of experimental
-          solid state physics and quantum technology. 
+          solid-state physics and quantum technology. 
         </p>
         <p>
-          Outside the lab I read self-help book — Inner Engineering, Siddhartha, The Alchemist, The Untethered Soul,
-          The Peaceful Warrior... <a href="books.html" style="color: var(--accent)">More-Here..</a>
+          Outside the lab, I read philosophical and self-growth books — Inner Engineering, Siddhartha, The Alchemist, The Untethered Soul,
+          The Peaceful Warrior... <a href="books.html" class="hover-arrow-container" style="color: var(--accent); font-weight: 500;">More Here <span class="hover-arrow">↗</span></a>
         </p>
 
-        <div class="about-links">
+        <div class="about-links" style="margin-bottom: 2.5rem;">
           <a href="https://www.linkedin.com/in/gyan-sah-a4705b291" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://github.com/sahgyan9" target="_blank" rel="noopener">GitHub</a>
           <a href="mailto:sahgyan9@gmail.com">sahgyan9@gmail.com</a>
+        </div>
+
+        <div class="about-video-wrapper">
+          <p class="page-eyebrow" style="margin-bottom: 0.8rem; font-size: 0.72rem;">Featured In: SRM University Interview</p>
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+              src="https://www.youtube.com/embed/hVELZ_He_Oc" 
+              title="SRM AP — Gyan Kumar Sah" frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </div>
 
