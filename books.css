@@ -6,18 +6,24 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 }
 
 .book-item {
   display: flex;
   gap: 1.5rem;
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--border);
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   align-items: start;
 }
 
-.book-item:first-child {
-  border-top: 1px solid var(--border);
+.book-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 }
 
 .book-num {
@@ -31,12 +37,24 @@
 }
 
 .book-cover {
-  width: 72px;
+  width: 80px;
   height: auto;
   flex-shrink: 0;
-  border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 3px 6px 6px 3px;
+  box-shadow: 
+    inset 4px 0 10px rgba(0,0,0,0.1),
+    inset -1px 0 2px rgba(255,255,255,0.3),
+    0 8px 16px rgba(0,0,0,0.12);
+  position: relative;
+}
+
+.book-cover::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(to right, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+  border-radius: 3px 0 0 3px;
 }
 
 .book-body {
@@ -82,16 +100,20 @@
 
 .book-date {
   display: inline-block;
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  color: var(--ink-muted);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: #4caf72;
+  background: rgba(76, 175, 114, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 99px;
   margin-bottom: 0.7rem;
-  opacity: 0.7;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .book-date--ongoing {
-  color: #a0834a;
-  opacity: 1;
+  color: #b08d4b;
+  background: rgba(176, 141, 75, 0.1);
 }
 
 .book-note {

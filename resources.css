@@ -20,15 +20,26 @@
 
 /* Card grid */
 .res-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
 }
 
 /* Individual card */
 .res-card {
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--border);
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.res-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 }
 
 
@@ -51,15 +62,15 @@
 }
 
 .res-link-icon {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--ink-muted);
-  transition: color 0.2s, transform 0.2s;
+  transition: color 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   line-height: 1;
 }
 
-.res-link-icon:hover {
+.res-card:hover .res-link-icon {
   color: var(--accent);
-  transform: translate(2px, -2px);
+  transform: translate(3px, -3px);
 }
 
 .res-card-title {
@@ -73,7 +84,8 @@
   font-size: 0.88rem;
   color: var(--ink-muted);
   line-height: 1.8;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
 
 .res-card-url {
