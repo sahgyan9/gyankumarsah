@@ -109,11 +109,20 @@
   margin-bottom: 0.7rem;
   text-transform: uppercase;
   font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.book-item:hover .book-date {
+  background: rgba(76, 175, 114, 0.25);
 }
 
 .book-date--ongoing {
   color: #b08d4b;
   background: rgba(176, 141, 75, 0.1);
+}
+
+.book-item:hover .book-date--ongoing {
+  background: rgba(176, 141, 75, 0.25);
 }
 
 .book-note {

@@ -272,4 +272,24 @@ body:has(#nav-menu:target) .nav-dismiss {
 
   .page-header { padding-top: calc(var(--nav-h) + 3rem); }
 }
-
+
+/* =============================================
+   UTILITIES
+   ============================================= */
+
+/* Hover Arrow Animation */
+.hover-arrow-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: color 0.2s;
+}
+
+.hover-arrow {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-arrow-container:hover .hover-arrow {
+  transform: translate(3px, -3px);
+}

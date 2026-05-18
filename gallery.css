@@ -29,6 +29,21 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
 }
 
+/* Zig-Zag Layout for Even Cards */
+.gallery-card:nth-child(even) {
+  grid-template-columns: 1fr 380px;
+}
+
+.gallery-card:nth-child(even) .gallery-img-wrap {
+  order: 2;
+  border-right: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.gallery-card:nth-child(even) .gallery-text {
+  order: 1;
+}
+
 /* Image container */
 .gallery-img-wrap {
   background: var(--card-bg);
@@ -129,19 +144,25 @@
 
 /* ── Responsive ── */
 @media (max-width: 720px) {
-  .gallery-card {
+  .gallery-card, 
+  .gallery-card:nth-child(even) {
     grid-template-columns: 1fr;
     gap: 0;
   }
   
-  .gallery-img-wrap {
+  .gallery-img-wrap,
+  .gallery-card:nth-child(even) .gallery-img-wrap {
+    order: 0;
     border-right: none;
+    border-left: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     aspect-ratio: 16 / 10;
     min-height: auto;
   }
 
-  .gallery-text {
+  .gallery-text,
+  .gallery-card:nth-child(even) .gallery-text {
+    order: 1;
     padding: 1.5rem;
   }
 }
