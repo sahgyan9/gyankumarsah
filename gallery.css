@@ -3,7 +3,7 @@
    ============================================= */
 
 /* Wider main container for gallery */
-.gallery-main {
+main.gallery-main {
   max-width: 900px;
   display: flex;
   flex-direction: column;
