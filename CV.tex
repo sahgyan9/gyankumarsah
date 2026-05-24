@@ -1,0 +1,204 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+
+\usepackage{tikz}
+\usepackage{xcolor}
+
+\definecolor{skillblue}{HTML}{1E90FF}
+
+\newcommand{\skillbar}[1]{
+    \begin{tikzpicture}[scale=0.6, baseline]
+        \foreach \i in {1,...,5} {
+            \ifnum\i>#1
+                \fill[gray!30] (\i*0.3,0) rectangle +(0.25,0.25);
+            \else
+                \fill[skillblue] (\i*0.3,0) rectangle +(0.25,0.25);
+            \fi
+        }
+    \end{tikzpicture}
+}
+
+\setstretch{1.1}
+\pagenumbering{gobble}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+
+\begin{center}
+    {\LARGE \textbf{GYAN KUMAR SAH}} \\
+    \vspace{2pt}
+    {\small \faMapMarker \ Nepal \quad | \quad (He/Him)} \\
+    \vspace{4pt}
+    {\small 
+    \faPhone \ +977 9816836293 \ | \ +91 6301781885 \quad 
+    \faEnvelope \ \href{mailto:sahgyan9@gmail.com}{sahgyan9@gmail.com}
+    } \\
+    \vspace{2pt}
+    {\small 
+    \faLinkedin \ \href{https://www.linkedin.com/in/gyan-sah-a4705b291}{LinkedIn} \quad 
+    \faGithub \ \href{https://github.com/sahgyan9}{GitHub}
+    }
+\end{center}
+
+\section*{About Me}
+From my early childhood days I am curious in doing different experiment which I could think of being at home like making hot air ballon or trying to get soap out of foam and getting scold by my mom. Yet, beyond curiosity, I always
+felt a responsibility to use science for something greater — to serve humanity and our planet
+through innovation and make human life better. This desire shaped my academic path to pursue Bachelor in Physics at SRM University, AP, India (University focused on research \& Innovation)
+
+
+\section*{Education}
+
+\textbf{SRM University, Andhra Pradesh, India}  (\textit{2023–2027}) \\
+\textbf{Degree}: \textit{Bachelor of Science in Physics Honors with Research}          \hfill     \textbf{CGPA}: \textbf{9.69/10} \\
+\textbf{Relevant Coursework:} \textit   Mathematics for the Physical World, Fundamentals of Computing, Classical and Modern Physics, Foundation of Mathematical Physics,  Cryptography, Wave and Oscillation, Advanced Mathematical Physics, Quantum Mechanics, Introduction to Optics,  Electrostatic and Electric Current, Heat and Thermodynamics, Mathematical Modeling of Physical Data, Electronic System Design, Elementary Number Theory, Mathematical Methods in Quantum Computation, Statistical Physics, Atomic and Molecular Physics, Analog and Digital Electronics, Special Theory of Relativity, Solid State Physics, Nuclear and Particle Physics, Analytical Reasoning and Aptitude Skills, Emerging Technology, Principles of Management, Psychology for Everyday Living, Entrepreneurial Mindset, Creativity and Critical Thinking Skills, Introduction to LabVIEW and ZView, Introuduction to R and Python, Foundation of Data Analytics. 
+
+\textbf{Global School of Science, Kathmandu, Nepal} (\textit{2021–2023}) \\
+\textbf{Degree}: Intermediate (Science Stream) \hfill \textbf{GPA}: \textbf{3.81/4}\\
+\textbf{Subjects}: Physics, Mathematics, Chemistry, Computer Science, and English
+
+\textbf{Lord Bright Wisdom Int’l English School, Sarlahi, Nepal} (\textit{2016–2021}) \\
+\textbf{Degree}: Matriculation \hfill  \textbf{GPA}: \textbf{3.95/4}
+
+\section*{Extra Curricular Activities}
+\begin{enumerate}
+    \item 2023-2024: \textbf{Management Team Member}, International Relations Council at SRM University, AP. Collaborated with the social media team to conceptualize and produce promotional video content (Instagram Reels) for various cultural events (Diwali, Dussehra) and international workshops, driving student engagement.
+    \item 2022: Won \textbf{PowerPoint presentation} in Global School of Science
+    \item 2019: Served as \textbf{School Full In-charge} at Lord Bright School
+    \item 2018: Served as \textbf{School Discipline In-charge} at Lord Bright School
+\end{enumerate}
+
+
+\section*{Undergraduate Research Project}
+\textbf{Department of Physics, SRM University, Andhra Pradesh} \\
+\textbf{Project Title}: Optically Controlled Ferromagnetic Material\\
+\textbf{Mentor}:\textit{ Dr. Krishna Prasad Maity} \\
+\textbf{Lab:}\textit{ Exotic Interface Lab}\\
+\textbf{Description}: Masked Hall geometry of 30nm of Cobalt was deposited using RF Sputtering technique on $5 \times 5$ mm glass substrate. Then performed anamolous hall effect measurement using MFLI Lock-In Amplifier (Zurich).
+
+\textbf{Project}: \textit{Setting Up Cryogenic System for Low Temperature Measurement Device Physics}\\
+\textbf{Mentor}: \textit{Dr. Krishna Prasad Maity}\\
+\textbf{Description}: Manufactured aluminium connector with CNC to make electrical connection with precision gasket in order to maintaion $10^{-3}$mbar pressure. Developed LabVIEW program interfaced with Keithley SMU and DC2200 LED driver to automate the measurement.
+
+
+\vspace{0.5em}
+
+\textbf{Collaborative Project:} \\
+\textbf{Project Title:}\textit{Investigating and Improving Photoresponse in CdSe/Graphene Quantum Dot Hybrid System}\\
+\textbf{Mentor:}\textit{ Dr. Krishna Prasad Maity} \\
+\textbf{Team:}\textit{ Nilja George, Akshay Sampath}
+
+\textbf{Description}: Drop casted CdSe and different composite of GQD on $5 \times 5$mm silicon wafer. Conducted I-V measurement (Keithley 2636B SMU) at different intensity with different wavelength (DC2200 LED Driver Thorlabs) - Automated using LabVIEW. Measured time-response using MFLI Lock-In. Cleaned data using python and plotted it using Origin Software.
+
+
+\section*{Industry Experience}
+
+\textbf{Research Engineer Intern (Paid)} – (\textit{Feb 2025 – Present}) \\
+\textbf{Company}: \textit{Shakti Photon Solutions Pvt. Ltd., Guntur, Andhra Pradesh, India} \\
+\textbf{Company's Focus}: Green Hydrogen Electrolyzer, Fuel Cell, and CO2RR\\
+\textbf{Mentors}: Dr. Mallikarjuna Rao, Noah Jacob (CTO), Jan Nisa Qazi (PhD Scholar)
+
+\textbf{Roles and Responsibilites}: Designed different parts using fusion 360, manufactured it using CNC, 3D printer. Handled manufacturing using different materials like steel, Graphite, Acryllic, PTFE/Teflon. Made MEA's using Ultrasonic Spray Nozzle and hot pressing.\\ I was also soley responsible to make Arduino-based Hydorgen Leakage Detection System using MQ-8 Sensor with custom 3D printed Housing. Finally, I was also asigned to make design for $30 \times 30$ cm electrolyzer design for large industry order.\\
+\textbf{Conclusion:} In the company, I learned about different engineering challenge, different mechanical parts like valve, gasket, connectors and so on. Also learned a lot about electrical connection and devices used in industry. I was also responsible to deliver and setup the BOP of Fuel cell to IITD and train/educate their staff/technician how to operate it. This experience helped me in Setting Up Cryogenic System for Low Temperature Measurement Device Physics.
+
+\section*{Skills and Experience Gained}
+
+\begin{tabular}{@{}p{0.48\textwidth} p{0.48\textwidth}@{}}
+
+\textbf{Technical Skills} & \textbf{Research \& Soft Skills} \\
+
+\begin{itemize}[leftmargin=*, nosep]
+    \item RF/DC Sputtering  \skillbar{4}
+    \item Lock-In Amplifier \skillbar{3}
+    \item Fusion 360 / CNC / 3D Printing \skillbar{5}
+    \item LabVIEW \skillbar{4}
+    \item GI-XRD / Four Probe  \skillbar{3}
+    \item Electrical Engineering \skillbar{3}
+    \item PEM/AEM/AEMFC Fabrication  \skillbar{4}
+\end{itemize}
+&
+\begin{itemize}[leftmargin=*, nosep]
+    \item Python / Origin Data Analysis  \skillbar{4}
+    \item Qiskit / PennyLane \skillbar{3}
+    \item Experimental Design \skillbar{4}
+    \item Instrument Calibration \skillbar{4}
+    \item Leadership \& Teamwork \skillbar{5}
+    \item Technical Documentation \skillbar{5}
+    
+\end{itemize}
+
+\end{tabular}
+
+
+\section*{Academic Projects \& Hackathon}
+
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Post-Quantum Cryptography Project (Dr. Sazzad Ali Biswas)—} Explored post-quantum cryptography, focusing on Shor’s Algorithm, quantum superposition, and parallel processing.
+    \item \textbf{Amaravati Quantum Valley Hackathon (3rd Place):} Developed Quantum Double Shield Protocol
+    (a secure, quantum-enhanced communication with adaptive authentication) using Qiskit simulators. 
+    Prototype link: \textit{\href{https://preview--qdsp.lovable.app/}{https://preview--qdsp.lovable.app/}}.
+    \item \textbf{Peer-to-Peer Learning Platform (self-project) —} Built a website \textit{Friendly Learning SRMAP}  (\href{https://friendly-learning-srmap.lovable.app/}{friendly-learning-srmap.lovable.app}), a student mentoring and collaboration platform for academic networking and peer support.
+   \item \textbf{Temperature-Controlled Fan System (Dr. Krishna Prasad Maity) —} Designed an automatic temperature controlled fan system using transistor (BC107), resistor, thermistor(10K$\Omega$),and 9V battery and designed a 3D printed Case to fit the component to use in real life.
+\end{itemize}
+
+\section*{Conference and Workshop Attended}
+\begin{enumerate}
+    \item The International Conference on Materials Genome (ICMG) at SRM University-AP (Feb 19-21 2026)
+    \item Descriptor and Machine Learning for Materials (Feb 18, 2026)
+    \item Quantiverse 2026: Hands-on Quantum Computing (Feb 26, 2026)
+\end{enumerate}
+
+\section*{Scholarship and Grant}
+\begin{enumerate}
+    \item Received Merit-based scholarship to do my Intermediate Degree at Global School of Science.
+    \item Received 80\% fee waiver as a Merit-based Scholarship for Graduate Degree at SRM University, AP.
+    \item Was awarded with UG/PG SEED Grant to carry out research in SRM University, AP.
+\end{enumerate}
+\section*{Certification \& Courses}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Quantum Computing Fundamentals - LinkedIn Learning (July 2024)} - Learned basic knowledge of Qiskit, simulated quantum circuits on IBM Quantum 
+platform 
+\item \textbf{Data Science with Python - Finlatics (August 2025)} - Learned how to plot data using different python library like numpy, matplot, scipy, etc.
+\item \textbf{The Art of Doing electronics - Coursera (November 2025)}- Learned how to use capacitor, transistor, diode, oscilloscope, function generator and so many electronics devices.
+\item\textbf{Quantum Essentials and Algorithm - WISER (December 2025)} - Learning from professor of MIT, Princeton,\&  CEO, Founder and CTO of quantum start up about quantum technology, current status, challenges and so on.
+\end{itemize}
+\section*{Research Interests}
+
+%\begin{itemize}[leftmargin=*]
+    %\item Clean Energy (Green Hydrogen, Fuel Cell and CO2RR)
+    %\item Nanomaterials and Thin Film Deposition
+    %\item Quantum Technology
+%\end{itemize}
+\begin{itemize}[leftmargin=*]
+    \item Quantum and Nano Technology
+\end{itemize}
+
+\section*{References}
+
+\begin{tabular}{@{}p{0.48\linewidth}p{0.48\linewidth}@{}}
+\textbf{Dr. Mallikarjuna Rao} & \textbf{Dr. Krishna Prasad Maity} \\
+Founder, Shakti Photon Solutions Pvt. Ltd. & Assistant Professor, SRM University, AP \\
+\href{mailto:info@shaktiphotonsolutions.com}{info@shaktiphotonsolutions.com} & \href{mailto:krishnaprasad.m@srmap.edu.in}{krishnaprasad.m@srmap.edu.in} \\[0.5em]
+
+\textbf{Noah Jacob} \\
+CTO, Shakti Photon Solutions Pvt. Ltd. \\
+\href{mailto:ctoshaktiphoton@gmail.com}{ctoshaktiphoton@gmail.com}
+
+% \textbf{Nilja George} & \textbf{Akshay Sampath} \\
+% PhD Scholar, SRM University, AP & Undergraduate Student, SRM University, AP \\
+% \href{mailto:nilja_g@srmap.edu.in}{nilja\_g@srmap.edu.in} & \href{mailto:akshaysampath_mvr@srmap.edu.in}{akshaysampath\_mvr@srmap.edu.in}
+\end{tabular}
+
+\end{document}
+
+
