@@ -1,36 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(track.children);
-  const nextButton = document.querySelector('.next-btn');
-  const prevButton = document.querySelector('.prev-btn');
-  const instaLink = document.getElementById('dynamic-insta-link');
+  const carousels = document.querySelectorAll('.carousel-container');
 
-  let currentSlideIndex = 0;
+  carousels.forEach(container => {
+    const track = container.querySelector('.carousel-track');
+    const slides = Array.from(track.children);
+    const nextButton = container.querySelector('.next-btn');
+    const prevButton = container.querySelector('.prev-btn');
+    const instaLink = container.parentElement.querySelector('#dynamic-insta-link');
 
-  const updateSlidePosition = () => {
-    track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
-    
-    // Pause all videos when sliding
-    slides.forEach(slide => {
-      const video = slide.querySelector('video');
-      if (video) {
-        video.pause();
+    let currentSlideIndex = 0;
+
+    const updateSlidePosition = () => {
+      track.style.transform = `translateX(-${currentSlideIndex * 100}%)`;
+      
+      // Pause all videos when sliding
+      slides.forEach(slide => {
+        const video = slide.querySelector('video');
+        if (video) {
+          video.pause();
+        }
+      });
+
+      // Update the Instagram link if it exists for this specific card
+      if (instaLink && slides[currentSlideIndex].dataset.link) {
+        instaLink.href = slides[currentSlideIndex].dataset.link;
       }
-    });
+    };
 
-    // Update the Instagram link if it exists
-    if (instaLink && slides[currentSlideIndex].dataset.link) {
-      instaLink.href = slides[currentSlideIndex].dataset.link;
+    if (nextButton) {
+      nextButton.addEventListener('click', () => {
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+        updateSlidePosition();
+      });
     }
-  };
 
-  nextButton.addEventListener('click', () => {
-    currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-    updateSlidePosition();
-  });
-
-  prevButton.addEventListener('click', () => {
-    currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-    updateSlidePosition();
+    if (prevButton) {
+      prevButton.addEventListener('click', () => {
+        currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+        updateSlidePosition();
+      });
+    }
   });
 });
