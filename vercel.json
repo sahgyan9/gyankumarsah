@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "gyankumarsah.com.np"
+        }
+      ],
+      "destination": "https://www.gyankumarsah.com.np/:path*",
+      "permanent": true
+    }
+  ],
+  "cleanUrls": true
+}

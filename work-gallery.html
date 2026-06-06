@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Work Gallery — Gyan Kumar Sah</title>
-  <meta name="description" content="Images from Gyan Kumar Sah's lab work and research — let the pictures speak." />
+  <title>Gyan Kumar Sah - Lab & Research Gallery</title>
+  <meta name="description" content="Visual showcase of experimental physics setups, hardware builds, and research projects by Gyan Kumar Sah, including quantum photodetector rigs and electrolyzers." />
   <link rel="canonical" href="https://www.gyankumarsah.com.np/work-gallery.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,16 +14,96 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="shared.css" />
   <link rel="stylesheet" href="gallery.css" />
-  <meta property="og:site_name" content="Gyan Kumar Sah">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:site_name" content="Gyan Kumar Sah" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.gyankumarsah.com.np/work-gallery.html" />
+  <meta property="og:title" content="Gyan Kumar Sah - Lab & Research Gallery" />
+  <meta property="og:description" content="Visual showcase of experimental physics setups, hardware builds, and research projects by Gyan Kumar Sah, including quantum photodetector rigs and electrolyzers." />
+  <meta property="og:image" content="https://www.gyankumarsah.com.np/profile.jpeg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.gyankumarsah.com.np/work-gallery.html" />
+  <meta name="twitter:title" content="Gyan Kumar Sah - Lab & Research Gallery" />
+  <meta name="twitter:description" content="Visual showcase of experimental physics setups, hardware builds, and research projects by Gyan Kumar Sah, including quantum photodetector rigs and electrolyzers." />
+  <meta name="twitter:image" content="https://www.gyankumarsah.com.np/profile.jpeg" />
+
+  <!-- Structured Data: BreadcrumbList -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Gyan Kumar Sah",
-      "url": "https://www.gyankumarsah.com.np/"
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.gyankumarsah.com.np/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Work Gallery",
+          "item": "https://www.gyankumarsah.com.np/work-gallery.html"
+        }
+      ]
     }
   </script>
-  <link rel="icon" type="image/jpeg" href="profile.jpeg">
+
+  <!-- Structured Data: ImageGallery / CreativeWork -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Gyan Kumar Sah's Experimental Research and Hardware Prototyping Gallery",
+      "description": "Visual documentation of experimental setups, quantum photodetectors, mechanical fabrication, and IoT builds.",
+      "url": "https://www.gyankumarsah.com.np/work-gallery.html",
+      "associatedMedia": [
+        {
+          "@type": "ImageObject",
+          "name": "CdSe:GQD Photodetector Rig",
+          "description": "Custom 3D-rendered measurement setup for photodetector testing, designed in Fusion 360 and rendered in Blender.",
+          "contentUrl": "https://www.gyankumarsah.com.np/Images_Work/Setup_CdSe_GQD_Work.png"
+        },
+        {
+          "@type": "ImageObject",
+          "name": "CdSe:GQD Thin Film on Silicon Wafer",
+          "description": "Silicon wafer coated with CdSe:GQD composite thin film with hand-applied silver paint contacts.",
+          "contentUrl": "https://www.gyankumarsah.com.np/Images_Work/Chip_carrier_for_holding_wafer.png"
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Automatic Temperature Controlled Fan",
+          "description": "Demo of the custom built temperature-controlled fan system with 3D-printed articulation arm.",
+          "contentUrl": "https://www.gyankumarsah.com.np/Images_Work/Automatic_Temperature_Controlled_Fan.mp4",
+          "thumbnailUrl": "https://www.gyankumarsah.com.np/Images_Work/Automatic_Temperature_Controlled_Fan.png"
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Email-to-Calendar AI Agent & App",
+          "description": "Zero-code mobile interface demonstration showing Google AppSheet event triage linked to Google Apps Script.",
+          "contentUrl": "https://www.gyankumarsah.com.np/Images_Work/Appsheet.mp4",
+          "thumbnailUrl": "https://www.gyankumarsah.com.np/Images_Work/Appsheet.png"
+        },
+        {
+          "@type": "VideoObject",
+          "name": "Complete PV Hydrogen Electrolyzer",
+          "description": "Outdoor deployment and balloon launch of a complete solar hydrogen production setup.",
+          "contentUrl": "https://www.gyankumarsah.com.np/Images_Work/27-05-26_Demonstration_of_Electrolyzer.mp4"
+        },
+        {
+          "@type": "ImageObject",
+          "name": "Graphite Plate Serpentine Channel",
+          "description": "Precision CNC-machined graphite plate with serpentine fluid channels for fuel cell/electrolyzer testing.",
+          "contentUrl": "https://www.gyankumarsah.com.np/Images_Work/27-05-26_Graphite_Plate_Serpentine_Channel.webp"
+        }
+      ]
+    }
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
 </head>
 
 <body>
@@ -295,7 +375,7 @@
   </footer>
 
   <script type="module" src="nav.js"></script>
-  <script src="gallery.js"></script>
+  <script type="module" src="gallery.js"></script>
 </body>
 
 </html>
