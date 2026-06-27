@@ -151,3 +151,28 @@ if (scrollQuotes.length > 0) {
     scrollObserver.observe(quote);
   });
 }
+
+// About section collapsible Read More toggle
+const aboutMoreBtn = document.getElementById('btn-about-more');
+const aboutCollapsed = document.getElementById('about-collapsed');
+
+if (aboutMoreBtn && aboutCollapsed) {
+  aboutMoreBtn.addEventListener('click', () => {
+    const isExpanded = aboutCollapsed.classList.toggle('expanded');
+    const arrowEl = aboutMoreBtn.querySelector('.arrow');
+    
+    if (isExpanded) {
+      aboutMoreBtn.childNodes[0].textContent = 'Read Less ';
+      if (arrowEl) arrowEl.textContent = '↑';
+    } else {
+      aboutMoreBtn.childNodes[0].textContent = 'Read More ';
+      if (arrowEl) arrowEl.textContent = '↓';
+      
+      // Smooth scroll back up slightly to keep the About section title in focus if collapsed from far down
+      const aboutSection = document.getElementById('about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+}
