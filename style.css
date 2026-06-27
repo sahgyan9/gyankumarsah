@@ -21,6 +21,7 @@
   --accent-lt: #e8eff7;
   --border: #e2dfd8;
   --card-bg: #ffffff;
+  --card-bg-alt: #edf3f8; /* subtle quiet blue-gray tint for alternating cards */
 
   --font-body: 'Inter', system-ui, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
@@ -302,18 +303,24 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   overflow: hidden;
+}
+
+.acc-item:nth-child(even) {
+  background: var(--card-bg-alt);
 }
 
 .acc-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+  background: var(--card-bg);
 }
 
 .acc-item[open] {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   border-color: rgba(42, 92, 143, 0.15); /* light accent */
+  background: var(--card-bg);
 }
 
 
