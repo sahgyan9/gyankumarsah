@@ -43,4 +43,29 @@ document.addEventListener('DOMContentLoaded', () => {
       removeHighlights();
     }
   });
+
+  // Book collapse/expand toggle
+  const bookMoreBtn = document.getElementById('btn-zero-to-one-more');
+  const bookCollapsed = document.getElementById('zero-to-one-collapsed');
+
+  if (bookMoreBtn && bookCollapsed) {
+    bookMoreBtn.addEventListener('click', () => {
+      const isExpanded = bookCollapsed.classList.toggle('expanded');
+      const arrowEl = bookMoreBtn.querySelector('.arrow');
+      
+      if (isExpanded) {
+        bookMoreBtn.childNodes[0].textContent = 'Read Less ';
+        if (arrowEl) arrowEl.textContent = '↑';
+      } else {
+        bookMoreBtn.childNodes[0].textContent = 'Read More ';
+        if (arrowEl) arrowEl.textContent = '↓';
+        
+        // Scroll book item back into focus
+        const bookItem = bookCollapsed.closest('.book-item');
+        if (bookItem) {
+          bookItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    });
+  }
 });

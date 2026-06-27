@@ -224,3 +224,48 @@
     --bg-angle: 360deg;
   }
 }
+
+/* Collapsible book notes */
+.book-collapsed-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-out, opacity 0.4s ease-out, margin-top 0.4s ease-out;
+}
+
+.book-collapsed-content.expanded {
+  max-height: 1200px;
+  opacity: 1;
+  margin-top: 0.8rem;
+}
+
+.book-collapsed-content p {
+  margin-top: 0 !important;
+  margin-bottom: 0.8rem;
+}
+
+.book-collapsed-content p:last-child {
+  margin-bottom: 0;
+}
+
+.book-more-btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.3rem 0.75rem;
+  margin-top: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.book-more-btn:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
