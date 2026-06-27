@@ -224,6 +224,15 @@ img {
   color: var(--ink-muted);
 }
 
+.quote-text, .quote-author {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+.quote-text.fade-out, .quote-author.fade-out {
+  opacity: 0;
+}
+
 /* Gallery CTA button */
 .hero-gallery-btn {
   display: inline-block;
