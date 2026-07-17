@@ -240,6 +240,12 @@ img {
   opacity: 1;
 }
 
+/* Reserve space so typing/rotating doesn't shift the section below */
+.hero-quote .quote-text {
+  display: block;
+  min-height: 3.2em;
+}
+
 .quote-text.fade-out, .quote-author.fade-out {
   opacity: 0;
 }
@@ -511,14 +517,20 @@ section {
 }
 
 .project-link {
+  display: inline-block;
   font-size: 0.82rem;
   color: var(--accent);
   font-weight: 500;
-  transition: letter-spacing 0.2s;
+  border: 1px solid var(--accent);
+  border-radius: 99px;
+  padding: 0.35rem 1rem;
+  margin: 0.3rem 0.4rem 0.3rem 0;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .project-link:hover {
-  letter-spacing: 0.04em;
+  background: var(--accent);
+  color: #ffffff;
 }
 
 /* =============================================
@@ -573,19 +585,22 @@ section {
   margin-top: 1.8rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.4rem;
+  gap: 0.8rem;
 }
 
 .about-links a {
   font-size: 0.82rem;
   font-weight: 500;
   color: var(--accent);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
+  border: 1px solid var(--accent);
+  border-radius: 99px;
+  padding: 0.35rem 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .about-links a:hover {
-  border-bottom-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
 }
 
 .about-collapsed-content {
@@ -630,6 +645,14 @@ section {
 .about-more-btn:hover {
   background: var(--accent);
   color: #ffffff;
+}
+
+.about-books-btn {
+  border-radius: 99px;
+  padding: 0.25rem 0.9rem;
+  margin-top: 0;
+  font-size: 0.8rem;
+  vertical-align: middle;
 }
 
 /* =============================================
