@@ -22,11 +22,34 @@ main.gallery-main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   align-items: stretch;
+  /* When reached via a #jump link from the homepage, stop below the floating
+     nav pill (top:1rem + 45px height) instead of hiding the card top under it. */
+  scroll-margin-top: 100px;
 }
 
 .gallery-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Linked-card cue ──
+   When a card is the URL #target (arrived via a "View in Work Gallery" link),
+   give it an accent ring plus a one-time pulse so the viewer instantly sees
+   which card the homepage sent them to. */
+.gallery-card:target {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  animation: card-target-pulse 1.8s ease-out 1;
+}
+
+@keyframes card-target-pulse {
+  0%   { box-shadow: 0 0 0 0 var(--accent-lt), 0 4px 12px rgba(0, 0, 0, 0.03); }
+  35%  { box-shadow: 0 0 0 10px var(--accent-lt), 0 12px 32px rgba(0, 0, 0, 0.06); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 4px 12px rgba(0, 0, 0, 0.03); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-card:target { animation: none; }
 }
 
 /* Zig-Zag Layout for Even Cards */
@@ -98,6 +121,70 @@ main.gallery-main {
   margin: 0;
 }
 
+/* ── Card date line ──
+   A quiet "when" that sits under the eyebrow label. Fill the real value into
+   the <time> element. Cards without a known date show the dashed placeholder
+   variant below — search the HTML for "is-placeholder" to find what to fill. */
+.gallery-date {
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: fit-content;
+}
+
+.gallery-date::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: 0 0 auto;
+}
+
+/* Obvious fill-me-in slot for cards whose date isn't set yet. */
+.gallery-date.is-placeholder {
+  color: var(--accent);
+  font-style: italic;
+  border: 1px dashed var(--accent);
+  border-radius: 6px;
+  padding: 0.15rem 0.55rem;
+}
+
+.gallery-date.is-placeholder::before {
+  display: none;
+}
+
+/* Dashed "drop media here" box for cards whose image/video isn't in yet.
+   Replace the whole .gallery-img-placeholder block with an <img>/<video>. */
+.gallery-img-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: calc(100% - 2rem);
+  min-height: 220px;
+  margin: 1rem;
+  border: 2px dashed var(--accent);
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-style: italic;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.gallery-img-placeholder small {
+  color: var(--ink-muted);
+  font-style: normal;
+  font-size: 0.7rem;
+}
+
 .gallery-desc {
   font-size: 0.875rem;
   color: var(--ink-muted);
@@ -165,6 +252,70 @@ main.gallery-main {
     order: 1;
     padding: 1.5rem;
   }
+}
+
+/* ── Full-card carousel: the whole card (image + text) slides left/right ── */
+.gallery-card.card-carousel {
+  display: block;        /* override the 2-column grid */
+  position: relative;
+  padding: 0;
+  max-height: none;      /* override .carousel-container cap */
+}
+
+.gallery-card.card-carousel .card-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  align-items: stretch;
+}
+
+/* Reserve room on the right so text never runs under the top-right switch buttons */
+.gallery-card.card-carousel .gallery-text {
+  padding-right: 6rem;
+}
+
+@media (max-width: 720px) {
+  .gallery-card.card-carousel .card-slide {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card.card-carousel .gallery-img-wrap {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    aspect-ratio: 16 / 10;
+    min-height: auto;
+  }
+
+  /* On mobile the buttons sit over the image (top), so the text needs no extra right space */
+  .gallery-card.card-carousel .gallery-text {
+    padding-right: 1.5rem;
+  }
+}
+
+/* Outer "switch topic" control — top-right, so it never collides with the inner image arrows */
+.gallery-card.card-carousel > .topic-btn {
+  top: 14px;
+  transform: none;
+  width: 32px;
+  height: 32px;
+  font-size: 1.3rem;
+  background: var(--accent);
+  z-index: 30;
+}
+
+.gallery-card.card-carousel > .topic-btn.prev-btn {
+  left: auto;
+  right: 54px;
+}
+
+.gallery-card.card-carousel > .topic-btn.next-btn {
+  right: 14px;
+}
+
+.gallery-card.card-carousel > .topic-btn:hover {
+  background: var(--accent);
+  opacity: 0.85;
 }
 
 /* ── Carousel Styling ── */

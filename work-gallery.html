@@ -142,44 +142,106 @@
   <!-- GALLERY -->
   <main class="page-main gallery-main">
 
-    <!-- Card 1 -->
-    <article class="gallery-card">
-      <div class="gallery-img-wrap">
-        <img src="Images_Work/Setup_CdSe_GQD_Work.png"
-          alt="Custom 3D-rendered measurement setup for CdSe:GQD photodetector" loading="lazy" />
-      </div>
-      <div class="gallery-text">
-        <p class="gallery-label">Measurement Setup</p>
-        <h2 class="gallery-title">CdSe:GQD Photodetector Rig</h2>
-        <p class="gallery-desc">
-          I designed both the LED holder and sample stage in Fusion 360 and 3D-printed them in-house.
-          The fixed geometry eliminates variable contact resistance that made earlier free-hand setups
-          unreliable. This rendering was made in Blender for the research paper figure.
-        </p>
-        <ul class="gallery-tags">
-          <li>Blender</li>
-        </ul>
+    <!-- Card 1 — CdSe/Graphene photoresponse research (whole card slides between setup + device) -->
+    <article class="gallery-card card-carousel carousel-container" id="cdse-gqd-photodetector">
+      <button class="carousel-btn topic-btn prev-btn" aria-label="Previous">‹</button>
+      <button class="carousel-btn topic-btn next-btn" aria-label="Next">›</button>
+      <div class="carousel-track">
+
+        <!-- Slide 1: Measurement setup -->
+        <div class="carousel-slide card-slide">
+          <div class="gallery-img-wrap carousel-container" style="padding: 0;">
+            <button class="carousel-btn prev-btn" aria-label="Previous image">‹</button>
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="Images_Work/Setup_CdSe_GQD_Work.png"
+                  alt="3D-rendered measurement setup for CdSe:GQD photodetector" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/CdSe_GQD%201.jpeg"
+                  alt="The real 3D-printed CdSe:GQD photodetector rig with BNC connectors and wiring" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/CdSe_GQD%202.jpeg"
+                  alt="Dark-box measurement enclosure for the CdSe:GQD photodetector" loading="lazy" />
+              </div>
+            </div>
+            <button class="carousel-btn next-btn" aria-label="Next image">›</button>
+          </div>
+          <div class="gallery-text">
+            <p class="gallery-label">Investigating &amp; Improving Photoresponse in CdSe/Graphene</p>
+            <time class="gallery-date">Jan – May 2026</time>
+            <h2 class="gallery-title">CdSe:GQD Photodetector Rig</h2>
+            <p class="gallery-desc">
+              I designed both the LED holder and sample stage in Fusion 360 and 3D-printed them in-house.
+              The fixed geometry eliminates variable contact resistance that made earlier free-hand setups
+              unreliable. This rendering was made in Blender for the research paper figure.
+            </p>
+            <ul class="gallery-tags">
+              <li>Fusion 360</li>
+              <li>3D Printing</li>
+              <li>Blender</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Slide 2: Device under test -->
+        <div class="carousel-slide card-slide">
+          <div class="gallery-img-wrap">
+            <img src="Images_Work/Chip_carrier_for_holding_wafer.png"
+              alt="5x5mm silicon wafer on chip carrier with silver paint contacts" loading="lazy" />
+          </div>
+          <div class="gallery-text">
+            <p class="gallery-label">Investigating &amp; Improving Photoresponse in CdSe/Graphene</p>
+            <time class="gallery-date">Jan – May 2026</time>
+            <h2 class="gallery-title">CdSe:GQD Thin Film on Silicon</h2>
+            <p class="gallery-desc">
+              A 5 × 5 mm² silicon wafer coated with a CdSe:GQD composite thin film.
+              The silver paint contacts are applied by hand under a microscope — each contact
+              placed to ensure flat, repeatable electrical connection across every measurement run.
+            </p>
+            <ul class="gallery-tags">
+              <li>Thin Film</li>
+              <li>Silver Paint Contacts</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </article>
 
-    <!-- Card 2 -->
-    <article class="gallery-card">
-      <div class="gallery-img-wrap">
-        <img src="Images_Work/Chip_carrier_for_holding_wafer.png"
-          alt="5x5mm silicon wafer on chip carrier with silver paint contacts" loading="lazy" />
+    <!-- Card 2 — Cryogenic low-temperature measurement setup -->
+    <article class="gallery-card" id="cryogenic-setup">
+      <div class="gallery-img-wrap carousel-container" style="padding: 0;">
+        <button class="carousel-btn prev-btn" aria-label="Previous image">‹</button>
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="Images_Work/Cryogenic%201.jpeg" alt="Cryogenic low-temperature measurement setup" loading="lazy" />
+          </div>
+          <div class="carousel-slide">
+            <img src="Images_Work/Cryogenic%202.jpeg" alt="Cryogenic system vacuum and connector assembly" loading="lazy" />
+          </div>
+          <div class="carousel-slide">
+            <img src="Images_Work/Cryogenic%203.jpeg" alt="Cryogenic measurement instrumentation" loading="lazy" />
+          </div>
+        </div>
+        <button class="carousel-btn next-btn" aria-label="Next image">›</button>
       </div>
       <div class="gallery-text">
-        <p class="gallery-label">Device Under Test</p>
-        <h2 class="gallery-title">CdSe:GQD Thin Film on Silicon</h2>
+        <p class="gallery-label">Low-Temperature Physics · SRM University, AP</p>
+        <time class="gallery-date">May 2025 – Present</time>
+        <h2 class="gallery-title">Cryogenic System for Low-Temperature Measurements</h2>
         <p class="gallery-desc">
-          A 5 × 5 mm² silicon wafer coated with a CdSe:GQD composite thin film.
-          The silver paint contacts are applied by hand under a microscope — each contact
-          placed to ensure flat, repeatable electrical connection across every measurement run.
+          CNC-machined an aluminium connector to hold a 10⁻³ mbar vacuum, then wrote LabVIEW programs
+          interfacing a Keithley SMU and temperature controller to fully automate measurements down to
+          cryogenic temperatures (~77 K). This is where I learned to tune a PID controller in practice.
         </p>
         <ul class="gallery-tags">
-          <li>Thin Film</li>
-          <li>Silver Paint Contacts</li>
-
+          <li>Cryogenics</li>
+          <li>LabVIEW</li>
+          <li>PID Control</li>
+          <li>Vacuum Systems</li>
+          <li>CNC</li>
         </ul>
       </div>
     </article>
@@ -203,6 +265,7 @@
       </div>
       <div class="gallery-text">
         <p class="gallery-label">Hardware Build</p>
+        <time class="gallery-date">Dec 2025</time>
         <h2 class="gallery-title">Automatic Temperature Controlled Fan</h2>
         <p class="gallery-desc">
           A custom-built automatic temperature-controlled fan system. The control unit features toggle switches for
@@ -213,29 +276,6 @@
           <li>Electronics</li>
           <li>System Design</li>
           <li>3D Printing</li>
-        </ul>
-      </div>
-    </article>
-
-    <!-- Card 4 -->
-    <article class="gallery-card" id="email-calendar">
-      <div class="gallery-img-wrap">
-        <video src="Images_Work/Appsheet.mp4"
-          poster="Images_Work/Appsheet.png" controls preload="metadata"
-          aria-label="AppSheet Event Triage App Demo"></video>
-      </div>
-      <div class="gallery-text">
-        <p class="gallery-label">Software Build</p>
-        <h2 class="gallery-title">Email-to-Calendar AI Agent &amp; App</h2>
-        <p class="gallery-desc">
-          A zero-code mobile frontend built with Google AppSheet to triage events extracted from my inbox. 
-          A background Google Apps Script uses Mistral AI to parse emails and log actionable events into a Google Sheet database.
-          This app lets me quickly review and approve events with a swipe, pushing them directly to my Google Calendar.
-        </p>
-        <ul class="gallery-tags">
-          <li>AppSheet</li>
-          <li>Google Apps Script</li>
-          <li>Mistral AI</li>
         </ul>
       </div>
     </article>
@@ -270,6 +310,7 @@
       </div>
       <div class="gallery-text">
         <p class="gallery-label">Content Creation & Social Media</p>
+        <time class="gallery-date">Jul 2023 – Dec 2024</time>
         <h2 class="gallery-title">IR Council Management Team</h2>
         <p class="gallery-desc">
           As part of the Management Team for the International Relations Council at SRM University, AP, 
@@ -286,84 +327,119 @@
       </div>
     </article>
 
-    <!-- Card 6 -->
-    <article class="gallery-card" id="shakti-pv-electrolyzer">
-      <div class="gallery-img-wrap carousel-container" style="padding: 0;">
-        <button class="carousel-btn prev-btn" aria-label="Previous media">‹</button>
-        <div class="carousel-track">
-          <div class="carousel-slide">
-            <video src="Images_Work/27-05-26_Demonstration_of_Electrolyzer.mp4" controls preload="metadata"
-              aria-label="Demonstration of Solar Electrolyzer Outdoors"></video>
+    <!-- Card 6 — Shakti Photon Solutions (whole card slides between the two topics) -->
+    <article class="gallery-card card-carousel carousel-container" id="shakti-pv-electrolyzer">
+      <button class="carousel-btn topic-btn prev-btn" aria-label="Previous topic">‹</button>
+      <button class="carousel-btn topic-btn next-btn" aria-label="Next topic">›</button>
+      <div class="carousel-track">
+
+        <!-- Topic 1: PV Hydrogen Electrolyzer -->
+        <div class="carousel-slide card-slide">
+          <div class="gallery-img-wrap carousel-container" style="padding: 0;">
+            <button class="carousel-btn prev-btn" aria-label="Previous media">‹</button>
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <video src="Images_Work/27-05-26_Demonstration_of_Electrolyzer.mp4" controls preload="metadata"
+                  aria-label="Demonstration of Solar Electrolyzer Outdoors"></video>
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_ballon_flying_by_filling_hydrogen.webp" alt="Hydrogen Balloon Flying" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_demo_of_electrolyzer_by_filling_ballon_with_hydrogen.webp" alt="Filling Balloon with Hydrogen" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_NIT_Warangle_Electrolyzer_Setup.webp" alt="NIT Warangal Setup" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_NIT_Warangle_Setup_Electrolyzer.webp" alt="NIT Warangal Setup Detail" loading="lazy" />
+              </div>
+            </div>
+            <button class="carousel-btn next-btn" aria-label="Next media">›</button>
           </div>
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_ballon_flying_by_filling_hydrogen.webp" alt="Hydrogen Balloon Flying" loading="lazy" />
-          </div>
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_demo_of_electrolyzer_by_filling_ballon_with_hydrogen.webp" alt="Filling Balloon with Hydrogen" loading="lazy" />
-          </div>
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_NIT_Warangle_Electrolyzer_Setup.webp" alt="NIT Warangal Setup" loading="lazy" />
-          </div>
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_NIT_Warangle_Setup_Electrolyzer.webp" alt="NIT Warangal Setup Detail" loading="lazy" />
+          <div class="gallery-text">
+            <p class="gallery-label">Shakti Photon Solutions</p>
+            <time class="gallery-date">Aug 2023 – Present</time>
+            <h2 class="gallery-title">Complete PV Hydrogen Electrolyzer</h2>
+            <p class="gallery-desc">
+              A successful outdoor deployment of a complete PV Hydrogen Electrolyzer. This project culminated in
+              using solar power to produce hydrogen and fly a balloon in the open air. This was an intensive,
+              multi-disciplinary group work at Shakti Photon Solutions alongside Noah Jacob (CTO) and Gagan (Intern).
+              We also successfully deployed the laboratory setup at NIT Warangal.
+            </p>
+            <ul class="gallery-tags">
+              <li>Renewable Energy</li>
+              <li>System Integration</li>
+              <li>Team Collaboration</li>
+            </ul>
           </div>
         </div>
-        <button class="carousel-btn next-btn" aria-label="Next media">›</button>
-      </div>
-      <div class="gallery-text">
-        <p class="gallery-label">Shakti Photon Solutions</p>
-        <h2 class="gallery-title">Complete PV Hydrogen Electrolyzer</h2>
-        <p class="gallery-desc">
-          A successful outdoor deployment of a complete PV Hydrogen Electrolyzer. This project culminated in 
-          using solar power to produce hydrogen and fly a balloon in the open air. This was an intensive, 
-          multi-disciplinary group work at Shakti Photon Solutions alongside Noah Jacob (CTO) and Gagan (Intern). 
-          We also successfully deployed the laboratory setup at NIT Warangal.
-        </p>
-        <ul class="gallery-tags">
-          <li>Renewable Energy</li>
-          <li>System Integration</li>
-          <li>Team Collaboration</li>
-        </ul>
+
+        <!-- Topic 2: Hardware Prototyping & CNC Machining -->
+        <div class="carousel-slide card-slide">
+          <div class="gallery-img-wrap carousel-container" style="padding: 0;">
+            <button class="carousel-btn prev-btn" aria-label="Previous media">‹</button>
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_Graphite_Plate_Serpentine_Channel.webp" alt="Graphite Plate with Serpentine Channel" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_CNC.webp" alt="CNC Machining" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_Electrolyzer.webp" alt="Electrolyzer Assembly" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_Hydrogen_Storage_tank.webp" alt="Hydrogen Storage Tank" loading="lazy" />
+              </div>
+              <div class="carousel-slide">
+                <img src="Images_Work/27-05-26_Hydrogen_Sensor.webp" alt="3D Printed Hydrogen Sensor" loading="lazy" />
+              </div>
+            </div>
+            <button class="carousel-btn next-btn" aria-label="Next media">›</button>
+          </div>
+          <div class="gallery-text">
+            <p class="gallery-label">Shakti Photon Solutions</p>
+            <time class="gallery-date">Aug 2023 – Present</time>
+            <h2 class="gallery-title">Hardware Prototyping &amp; CNC Machining</h2>
+            <p class="gallery-desc">
+              Focusing on the deep hardware engineering aspects at Shakti Photon Solutions. We machined custom
+              graphite plates with serpentine channels using a CNC machine, built acrylic storage tanks, and
+              developed a 3D-printed Hydrogen Safety Sensor. This complex mechanical and electronic integration
+              was a collaborative effort with Noah Jacob (CTO) and Gagan (Intern).
+            </p>
+            <ul class="gallery-tags">
+              <li>CNC Machining</li>
+              <li>Hardware Prototyping</li>
+              <li>Fluid Dynamics</li>
+              <li>Electronics &amp; IoT</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </article>
 
-    <!-- Card 7 -->
-    <article class="gallery-card" id="shakti-prototyping">
-      <div class="gallery-img-wrap carousel-container" style="padding: 0;">
-        <button class="carousel-btn prev-btn" aria-label="Previous media">‹</button>
-        <div class="carousel-track">
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_Graphite_Plate_Serpentine_Channel.webp" alt="Graphite Plate with Serpentine Channel" loading="lazy" />
-          </div>
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_CNC.webp" alt="CNC Machining" loading="lazy" />
-          </div>
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_Electrolyzer.webp" alt="Electrolyzer Assembly" loading="lazy" />
-          </div>
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_Hydrogen_Storage_tank.webp" alt="Hydrogen Storage Tank" loading="lazy" />
-          </div>
-          <div class="carousel-slide">
-            <img src="Images_Work/27-05-26_Hydrogen_Sensor.webp" alt="3D Printed Hydrogen Sensor" loading="lazy" />
-          </div>
-        </div>
-        <button class="carousel-btn next-btn" aria-label="Next media">›</button>
+    <!-- Email-to-Calendar AI Agent (moved to bottom) -->
+    <article class="gallery-card" id="email-calendar">
+      <div class="gallery-img-wrap">
+        <video src="Images_Work/Appsheet.mp4"
+          poster="Images_Work/Appsheet.png" controls preload="metadata"
+          aria-label="AppSheet Event Triage App Demo"></video>
       </div>
       <div class="gallery-text">
-        <p class="gallery-label">Shakti Photon Solutions</p>
-        <h2 class="gallery-title">Hardware Prototyping & CNC Machining</h2>
+        <p class="gallery-label">Software Build</p>
+        <time class="gallery-date">May 2026</time>
+        <h2 class="gallery-title">Email-to-Calendar AI Agent &amp; App</h2>
         <p class="gallery-desc">
-          Focusing on the deep hardware engineering aspects at Shakti Photon Solutions. We machined custom 
-          graphite plates with serpentine channels using a CNC machine, built acrylic storage tanks, and 
-          developed a 3D-printed Hydrogen Safety Sensor. This complex mechanical and electronic integration 
-          was a collaborative effort with Noah Jacob (CTO) and Gagan (Intern).
+          A zero-code mobile frontend built with Google AppSheet to triage events extracted from my inbox.
+          A background Google Apps Script uses Mistral AI to parse emails and log actionable events into a Google Sheet database.
+          This app lets me quickly review and approve events with a swipe, pushing them directly to my Google Calendar.
         </p>
         <ul class="gallery-tags">
-          <li>CNC Machining</li>
-          <li>Hardware Prototyping</li>
-          <li>Fluid Dynamics</li>
-          <li>Electronics & IoT</li>
+          <li>AppSheet</li>
+          <li>Google Apps Script</li>
+          <li>Mistral AI</li>
         </ul>
       </div>
     </article>

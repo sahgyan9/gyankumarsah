@@ -443,6 +443,45 @@ section {
   color: var(--accent);
 }
 
+/* ── Timeline date chip on each accordion item ──
+   A filled accent chip that reads as the "when", distinct from the gray
+   context/skill tags. Sits at the start of the meta row. */
+.acc-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  background: var(--accent-lt);
+  border: 1px solid var(--accent-lt);
+  white-space: nowrap;
+}
+
+.acc-date::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: 0 0 auto;
+}
+
+/* Fill-me-in variant for items whose date isn't set yet. */
+.acc-date.is-placeholder {
+  background: transparent;
+  border: 1px dashed var(--accent);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.acc-date.is-placeholder::before {
+  display: none;
+}
+
 /* =============================================
    INTERLUDE / QUOTE BREAK
    ============================================= */
