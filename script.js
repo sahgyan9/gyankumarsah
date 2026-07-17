@@ -77,8 +77,10 @@ if (quoteTextEl && quoteAuthorEl) {
             // Typing finished, fade in the author
             quoteAuthorEl.textContent = currentQuote.author;
             quoteAuthorEl.classList.remove('fade-out');
-            // Wait 3 seconds before rotating to the next quote
-            setTimeout(rotateQuote, 3000);
+            // One loop only: stop here instead of rotating again
+            if (currentIndex < quotes.length - 1) {
+              setTimeout(rotateQuote, 3000);
+            }
           }
         }
         type();
@@ -88,9 +90,11 @@ if (quoteTextEl && quoteAuthorEl) {
         
         quoteTextEl.classList.remove('fade-out');
         quoteAuthorEl.classList.remove('fade-out');
-        
-        // Wait 6 seconds before rotating to the next quote
-        setTimeout(rotateQuote, 3000);
+
+        // One loop only: stop here instead of rotating again
+        if (currentIndex < quotes.length - 1) {
+          setTimeout(rotateQuote, 3000);
+        }
       }
     }, 500); // match CSS fade-out duration (0.5s)
   }
