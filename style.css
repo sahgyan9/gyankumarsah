@@ -482,6 +482,247 @@ section {
   display: none;
 }
 
+/* ── Award / grant badge ──
+   A warm gold chip, distinct from the blue date & skill chips, so a funded
+   grant or honour reads instantly as an achievement rather than a tag. */
+.acc-grant {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #8a6a1a;
+  background: #fbf1d3;
+  border: 1px solid #ecd9a3;
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* =============================================
+   LICENSES & CERTIFICATIONS
+   ============================================= */
+
+/* ── WISER spotlight: the selective, multi-stage program ── */
+.cert-spotlight {
+  position: relative;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  padding: 2rem 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.cert-spotlight-eyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-lt);
+  padding: 0.3rem 0.7rem;
+  border-radius: 99px;
+  margin-bottom: 1rem;
+}
+
+.cert-spotlight-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+
+.cert-spotlight-meta {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: 1.1rem;
+}
+
+.cert-dot { color: var(--border); margin: 0 0.15rem; }
+
+.cert-spotlight-desc {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+  max-width: 60ch;
+}
+
+/* Funnel: each stage of the selection, narrowing to the final 100 */
+.cert-funnel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.6rem;
+  list-style: none;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  counter-reset: none;
+}
+
+.cert-step {
+  flex: 1 1 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  position: relative;
+}
+
+/* Arrow between stages (hidden on the first, and when wrapped on mobile) */
+.cert-step + .cert-step::before {
+  content: '→';
+  position: absolute;
+  left: -0.55rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--border);
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.cert-step-num {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+}
+
+.cert-step-label {
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  line-height: 1.4;
+}
+
+/* Final stage gets the accent treatment — the payoff */
+.cert-step.is-final {
+  background: var(--accent-lt);
+  border-color: var(--accent);
+}
+
+.cert-step.is-final .cert-step-num { color: var(--accent); }
+
+.cert-credential {
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  color: var(--ink-muted);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.cert-verify {
+  color: var(--accent);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cert-verify:hover { text-decoration: underline; }
+
+/* ── Grid of the remaining certificates ── */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: var(--card-bg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  padding: 1.2rem 1.3rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+}
+
+.cert-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0;
+}
+
+.cert-card-issuer {
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+.cert-card-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 0.6rem;
+}
+
+.cert-card-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  background: var(--accent-lt);
+  white-space: nowrap;
+}
+
+.cert-card-date::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: 0 0 auto;
+}
+
+.cert-card-link {
+  margin-top: 0.7rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: gap 0.2s ease;
+}
+
+.cert-card-link:hover { gap: 0.5rem; }
+
+@media (max-width: 560px) {
+  .cert-spotlight { padding: 1.5rem 1.3rem; }
+  .cert-step { flex-basis: 100%; }
+  /* When stacked vertically, point the arrow downward instead of sideways */
+  .cert-step + .cert-step::before {
+    content: '↓';
+    left: 50%;
+    top: -0.55rem;
+  }
+}
+
 /* =============================================
    INTERLUDE / QUOTE BREAK
    ============================================= */
