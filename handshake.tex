@@ -1,0 +1,184 @@
+%=========================================================================
+%  Gyan Kumar Sah — Resume for Handshake AI Fellowship
+%  Single column, no exotic packages, ATS-parseable.
+%  Compile with pdfLaTeX on Overleaf.
+%=========================================================================
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[margin=0.62in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{charter}          % clean, readable serif; swap for \usepackage{lmodern} if preferred
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{rule}{HTML}{2B2B2B}
+
+\pagenumbering{gobble}
+\setlist[itemize]{noitemsep, topsep=1pt, parsep=0pt, leftmargin=1.1em, label=\textbullet}
+
+\titleformat{\section}{\normalsize\bfseries\scshape}{}{0em}{}[\vspace{-0.55em}\color{rule}\rule{\linewidth}{0.8pt}]
+\titlespacing*{\section}{0pt}{9pt}{4pt}
+
+% \entry{Role/Title}{Right-aligned date}
+\newcommand{\entry}[2]{\textbf{#1}\hfill{\small #2}\par}
+% \sub{Organisation / context}
+\newcommand{\sub}[1]{{\small\itshape #1}\par\vspace{1pt}}
+
+\begin{document}
+
+%------------------------------------------------ HEADER
+\begin{center}
+    {\LARGE\bfseries GYAN KUMAR SAH}\\[3pt]
+    {\small Physics Researcher (Quantum \& Condensed Matter) \textbullet\ Nepal / India \textbullet\ He/Him}\\[3pt]
+    {\small
+    \href{mailto:sahgyan9@gmail.com}{sahgyan9@gmail.com} \ \textbar\
+    +977 9816836293 \ \textbar\ +91 6301781885
+    }\\[2pt]
+    {\small
+    \href{https://www.gyankumarsah.com.np/}{gyankumarsah.com.np} \ \textbar\
+    \href{https://www.linkedin.com/in/gyan-sah-a4705b291}{linkedin.com/in/gyan-sah-a4705b291} \ \textbar\
+    \href{https://github.com/sahgyan9}{github.com/sahgyan9}
+    }
+\end{center}
+
+%------------------------------------------------ PROFILE
+\section*{Profile}
+Final-year Physics Honours (with Research) student ranked at 9.69/10 CGPA, working at the intersection of
+experimental condensed-matter physics and quantum computing. Selected in the \textbf{top 100 of 65,000+} applicants
+nationally for the WISER quantum algorithms program. Two years of hands-on research and paid R\&D engineering, with a
+track record of turning dense technical material --- Shor's algorithm, BB84 key distribution, anomalous Hall
+measurements --- into written explanations and working prototypes. Comfortable evaluating and correcting technical
+reasoning, and already building with LLM APIs. Fluent in English, Nepali, and Hindi.
+
+%------------------------------------------------ EDUCATION
+\section*{Education}
+
+\entry{SRM University, Andhra Pradesh, India}{2023 -- 2027 (expected)}
+\sub{B.Sc. Physics, Honours with Research \ \textbar\ \ CGPA 9.69 / 10.00 \ \textbar\ \ 80\% merit scholarship}
+\begin{itemize}
+    \item Coursework: Quantum Mechanics, Mathematical Methods in Quantum Computation, Statistical Physics,
+          Solid State Physics, Nuclear \& Particle Physics, Special Relativity, Cryptography, Elementary Number Theory,
+          Atomic \& Molecular Physics, Analog \& Digital Electronics, Mathematical Modeling of Physical Data,
+          Foundations of Data Analytics, R and Python, LabVIEW.
+\end{itemize}
+
+\entry{Global School of Science, Kathmandu, Nepal}{2021 -- 2023}
+\sub{Higher Secondary, Science Stream \ \textbar\ \ GPA 3.81 / 4.00 \ \textbar\ \ Merit scholarship}
+
+%------------------------------------------------ RESEARCH
+\section*{Research Experience}
+
+\entry{Undergraduate Researcher --- Exotic Interface Lab, Dept. of Physics, SRM AP}{2024 -- Present}
+\sub{Advisor: Dr.\ Krishna Prasad Maity \ \textbar\ \ Funded by a competitive UG/PG SEED Research Grant}
+\begin{itemize}
+    \item \textbf{Optically Controlled Ferromagnetic Thin Films.} Deposited 30\,nm cobalt in a masked Hall geometry
+          by RF sputtering onto $5\times5$\,mm glass substrates; measured the anomalous Hall effect with a Zurich
+          Instruments MFLI lock-in amplifier.
+    \item \textbf{Cryogenic Measurement System.} Built a low-temperature device-physics setup end to end ---
+          CNC-machined aluminium connectors and precision gasket sealing to hold $10^{-3}$\,mbar, then wrote the
+          LabVIEW program interfacing a Keithley SMU and a DC2200 LED driver to automate the full measurement sweep.
+    \item \textbf{Photoresponse in CdSe / Graphene-Quantum-Dot Hybrids} (with N.\ George, A.\ Sampath).
+          Drop-cast CdSe and GQD composites on silicon; ran intensity- and wavelength-resolved I--V measurements
+          (Keithley 2636B, Thorlabs DC2200) under LabVIEW automation, plus lock-in time-response measurements.
+          Cleaned and analysed the resulting datasets in Python and produced publication-quality figures in Origin.
+\end{itemize}
+
+%------------------------------------------------ INDUSTRY
+\section*{Industry Experience}
+
+\entry{Research Engineer Intern (paid) --- Shakti Photon Solutions Pvt.\ Ltd.}{Feb 2025 -- Present}
+\sub{Green hydrogen electrolysers, fuel cells, and CO\textsubscript{2} reduction \ \textbar\ \ Guntur, Andhra Pradesh, India}
+\begin{itemize}
+    \item Designed components in Fusion 360 and manufactured them by CNC and 3D printing across steel, graphite,
+          acrylic, and PTFE; fabricated membrane electrode assemblies by ultrasonic spray coating and hot pressing.
+    \item Sole owner of an Arduino + MQ-8 hydrogen leak detection system, including the custom 3D-printed housing.
+    \item Produced the $30\times30$\,cm electrolyser design for a large industrial order.
+    \item Delivered and commissioned the fuel-cell balance of plant at \textbf{IIT Delhi} and trained their
+          technical staff on operation --- a teaching-under-scrutiny experience that fed directly into the
+          cryogenic build above.
+    \item Designed and shipped the company's corporate website (Vite, deployed on Vercel with SEO and sitemap).
+\end{itemize}
+
+%------------------------------------------------ QUANTUM & AI
+\section*{Quantum Computing, Cryptography \& AI Projects}
+\begin{itemize}
+    \item \textbf{WISER Quantum Algorithms \& Hands-on Training} (Dec 2025 -- Jun 2026). National two-phase program
+          run with Amaravati Quantum Valley and Qubitech. Advanced from 65,000+ enrolled learners, to the top 3,000,
+          through a proctored in-person examination, to the \textbf{final 100 awarded a 100\% scholarship}; taught by
+          MIT and Princeton faculty and quantum-startup founders.
+    \item \textbf{Quantum Double Shield Protocol} --- 3rd place, Amaravati Quantum Valley Hackathon (Aug 2025).
+          Two-layer post-quantum communication scheme combining BB84 quantum key distribution with a quantum random
+          number generator for adaptive authentication; simulated in Qiskit to demonstrate secure key exchange and
+          eavesdropper detection. \href{https://qdsp.lovable.app/}{qdsp.lovable.app}
+    \item \textbf{Post-Quantum Cryptography: From RSA to Shor's Algorithm} (Nov 2024, Dr.\ Sazzad Ali Biswas).
+          Written study of why RSA's hardness assumption collapses under Shor's algorithm, and of the PQC schemes
+          proposed to replace it. \href{https://drive.google.com/file/d/1fDQ5HvPlZYr21C-wEio_WIuogFJ1aVdB/view}{Full paper}
+    \item \textbf{Email-to-Calendar AI Agent} (May 2026). Autonomous agent in Google Apps Script calling the Mistral
+          AI API to extract structured event details (time, link, attendees) from inbox mail into a relational store,
+          with a zero-code AppSheet mobile front end for swipe-to-approve sync to Google Calendar.
+\end{itemize}
+
+%------------------------------------------------ SOFTWARE
+\section*{Self-Initiated Software}
+\begin{itemize}
+    \item \textbf{Nepali Village Calculator} --- free compound-interest calculator using Bikram Sambat dates, built
+          for how village lending actually works in Nepal after watching my mother phone a neighbour to do the maths.
+          Now the \textbf{\#1 Google result} for ``village calculator nepal''.
+          \href{https://village-calculator.vercel.app}{village-calculator.vercel.app}
+    \item \textbf{Portfolio Insight} --- investment tracker for the Nepali market (NEPSE) covering real returns,
+          bonus-share accounting, and sector-allocation dashboards. React, TypeScript, Vite, Tailwind, Recharts.
+          \href{https://github.com/sahgyan9/NEPSE-Portfolio-Insight}{github.com/sahgyan9/NEPSE-Portfolio-Insight}
+    \item \textbf{Friendly Learning SRMAP} --- peer-to-peer mentoring and study-partner platform for my university.
+          \href{https://friendly-learning-srmap.vercel.app/}{friendly-learning-srmap.vercel.app}
+    \item \textbf{Automatic Temperature-Controlled Fan} --- BC107 transistor, 10\,k$\Omega$ thermistor circuit with a
+          3D-printed enclosure; written up as a full report.
+\end{itemize}
+
+%------------------------------------------------ SKILLS
+\section*{Skills}
+\begin{itemize}
+    \item \textbf{Physics \& Quantum:} quantum mechanics, quantum algorithms (Shor, BB84, QKD), Qiskit, PennyLane,
+          solid-state and condensed-matter physics, statistical physics, number theory and cryptography.
+    \item \textbf{Experimental:} RF/DC sputtering, lock-in amplification, four-probe and GI-XRD, Keithley SMU,
+          cryogenics and vacuum systems, instrument calibration, experimental design.
+    \item \textbf{Computational:} Python (NumPy, SciPy, Matplotlib, pandas), R, LabVIEW automation, Origin,
+          data cleaning and analysis, LaTeX, Git, JavaScript/TypeScript, React.
+    \item \textbf{Communication:} technical writing and full research reports, teaching and staff training,
+          documentation, public speaking. English (fluent), Nepali (native), Hindi (fluent).
+\end{itemize}
+
+%------------------------------------------------ HONORS
+\section*{Honours \& Awards}
+\begin{itemize}
+    \item Top 100 of 65,000+ nationally --- WISER Quantum Program, 100\% scholarship (2026).
+    \item 3rd place --- Amaravati Quantum Valley Hackathon (2025).
+    \item UG/PG SEED Research Grant, SRM University AP.
+    \item 80\% merit scholarship (SRM University AP); merit scholarship (Global School of Science).
+    \item Featured in an SRM University AP student interview. \href{https://www.youtube.com/watch?v=hVELZ_He_Oc}{Watch}
+\end{itemize}
+
+%------------------------------------------------ CERTIFICATIONS
+\section*{Certifications}
+\begin{itemize}
+    \item AI Foundations --- OpenAI (Jun 2026) \ \textbullet\ \ Quantum Computing and Programming --- QWorld (Jun 2026)
+    \item Quantiverse 2026: Hands-on Quantum Computing --- C-DAC Noida (Feb 2026) \ \textbullet\
+          Descriptors \& Machine Learning for Materials --- SRM AP (Feb 2026)
+    \item Data Science with Python --- Finlatics (Aug 2025) \ \textbullet\
+          The Art of Doing Electronics --- Coursera (Nov 2025) \ \textbullet\
+          Quantum Computing Fundamentals --- LinkedIn Learning (Jul 2024)
+\end{itemize}
+
+%------------------------------------------------ LEADERSHIP
+\section*{Leadership}
+\begin{itemize}
+    \item \textbf{Lead, Aadigyan Winter Youth Program} --- International Relations Council, SRM AP (Feb 2024).
+          Selected to the Council management team by written SOP and interview; ran a four-day cross-border program
+          hosting 35+ students and teachers from Nepal, owning planning through execution.
+    \item \textbf{School Captain} (2020) and \textbf{Discipline In-charge} (2019), Lord Bright Wisdom Int'l School.
+          Highest student office; directed 33+ sub-captains across a student body of 1,400+, reporting to the Principal.
+\end{itemize}
+
+\end{document}

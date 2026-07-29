@@ -74,7 +74,7 @@ Live prototype: https://qdsp.lovable.app/
 ### Peer-to-Peer Learning Platform for SRMAP
 A self-initiated peer mentoring and academic collaboration platform for students at SRM University AP,
 helping students find hackathon partners, learning partners, and like-minded peers.
-Live site: https://friendly-learning-srmap.lovable.app/
+Live site: https://friendly-learning-srmap.vercel.app/
 
 ### Nepali Village Calculator
 A free Nepali compound interest calculator using Bikram Sambat (BS) calendar dates, built because there was no tool to help his mom calculate interest the way it's done in Nepali villages. Currently ranking #1 on Google Search for "village calculator nepal".
