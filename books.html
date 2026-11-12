@@ -36,15 +36,63 @@
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Book",
+              "name": "The Psychology of Money",
+              "author": {
+                "@type": "Person",
+                "name": "Morgan Housel"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Book",
+              "name": "The Power of Now",
+              "author": {
+                "@type": "Person",
+                "name": "Eckhart Tolle"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Book",
+              "name": "Don't Believe Everything You Think",
+              "author": {
+                "@type": "Person",
+                "name": "Joseph Nguyen"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Book",
+              "name": "How to Win Friends and Influence People",
+              "author": {
+                "@type": "Person",
+                "name": "Dale Carnegie"
+              }
+            }
+          },
         {
           "@type": "ListItem",
-          "position": 1,
+          "position": 5,
           "name": "Home",
           "item": "https://www.gyankumarsah.com.np/"
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 6,
           "name": "Books",
           "item": "https://www.gyankumarsah.com.np/books.html"
         }
@@ -208,6 +256,7 @@
       <a href="work-gallery.html">Work-gallery</a>
       <a href="resources.html">Resources</a>
       <a href="books.html" class="nav-active">Books</a>
+      <a href="Gyan_Kumar_Sah_CV.pdf" target="_blank" rel="noopener">CV</a>
 
       <a href="mailto:sahgyan9@gmail.com" class="nav-cta">Say hello →</a>
     </div>
@@ -217,11 +266,11 @@
   <header class="page-header" style="position: relative;">
     <div style="padding-right: 180px;">
       <p class="page-eyebrow">What I read</p>
-      <h1 class="page-title">Books I Love 🥰</h1>
+      <h1 class="page-title">Books I Love</h1>
       <p class="page-sub">These are not just books — they are turning points. Each one changed something in the way I see
         myself or the world.</p>
     </div>
-    <button id="btn-pick-1" class="btn-pick" style="position: absolute; bottom: 0; right: clamp(1.5rem, 5vw, 3rem);">My 1st Pick for You ⬇</button>
+    <button id="btn-pick-1" class="btn-pick" style="position: absolute; bottom: 0; right: clamp(1.5rem, 5vw, 3rem);">My 1st Pick for You ↓</button>
   </header>
 
   <!-- BOOK LIST -->
@@ -230,6 +279,50 @@
 
       <li class="book-item">
         <span class="book-num">01</span>
+        <img src="https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg" alt="The Psychology of Money" class="book-cover" loading="lazy" />
+        <div class="book-body">
+          <h2 class="book-title">The Psychology of Money <span class="book-check">✓</span></h2>
+          <p class="book-author">Morgan Housel</p>
+          <span class="book-date">Completed · Nov 2026</span>
+          <!-- NOTE FOR GYAN: add your own note on this book here, as <p class="book-note">...</p> -->
+        </div>
+      </li>
+
+      <li class="book-item">
+        <span class="book-num">02</span>
+        <img src="https://covers.openlibrary.org/b/isbn/9781577314806-L.jpg" alt="The Power of Now" class="book-cover" loading="lazy" />
+        <div class="book-body">
+          <h2 class="book-title">The Power of Now <span class="book-check">✓</span></h2>
+          <p class="book-author">Eckhart Tolle</p>
+          <span class="book-date">Completed · Oct 2026</span>
+          <!-- NOTE FOR GYAN: add your own note on this book here, as <p class="book-note">...</p> -->
+        </div>
+      </li>
+
+      <li class="book-item">
+        <span class="book-num">03</span>
+        <img src="https://covers.openlibrary.org/b/isbn/9798427063852-L.jpg" alt="Don't Believe Everything You Think" class="book-cover" loading="lazy" />
+        <div class="book-body">
+          <h2 class="book-title">Don't Believe Everything You Think <span class="book-check">✓</span></h2>
+          <p class="book-author">Joseph Nguyen</p>
+          <span class="book-date">Completed · Sep 2026</span>
+          <!-- NOTE FOR GYAN: add your own note on this book here, as <p class="book-note">...</p> -->
+        </div>
+      </li>
+
+      <li class="book-item">
+        <span class="book-num">04</span>
+        <img src="https://covers.openlibrary.org/b/isbn/9780671027032-L.jpg" alt="How to Win Friends and Influence People" class="book-cover" loading="lazy" />
+        <div class="book-body">
+          <h2 class="book-title">How to Win Friends and Influence People <span class="book-check">✓</span></h2>
+          <p class="book-author">Dale Carnegie</p>
+          <span class="book-date">Completed · Aug 2026</span>
+          <!-- NOTE FOR GYAN: add your own note on this book here, as <p class="book-note">...</p> -->
+        </div>
+      </li>
+
+      <li class="book-item">
+        <span class="book-num">05</span>
         <img src="https://cdn2.penguin.com.au/covers/original/9780753555200.jpg" alt="Zero to One" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">Zero to One <span class="book-check">✓</span></h2>
@@ -257,7 +350,7 @@
       </li>
 
       <li class="book-item">
-        <span class="book-num">02</span>
+        <span class="book-num">06</span>
         <img src="https://m.media-amazon.com/images/I/71bVz+uF3NL._AC_UF1000,1000_QL80_.jpg" alt="The Design of Everyday Things" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">The Design of Everyday Things <span class="book-dots">...</span></h2>
@@ -273,7 +366,7 @@
       </li>
 
       <li class="book-item">
-        <span class="book-num">03</span>
+        <span class="book-num">07</span>
         <img src="https://m.media-amazon.com/images/I/81SjT8dAIgL._AC_UF350,350_QL50_.jpg" alt="The Way of the Peaceful Warrior" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">The Way of the Peaceful Warrior <span class="book-dots">...</span></h2>
@@ -288,12 +381,12 @@
       </li>
 
       <li class="book-item" id="book-untethered-soul">
-        <span class="book-num">04</span>
+        <span class="book-num">08</span>
         <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1354898395i/1963638.jpg" alt="The Untethered Soul" class="book-cover" loading="lazy" />
         <div class="book-body" style="position: relative;">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;">
             <h2 class="book-title">The Untethered Soul <span class="book-dots">...</span></h2>
-            <button id="btn-pick-2" class="btn-pick hidden">My 2nd Pick for You ⬇</button>
+            <button id="btn-pick-2" class="btn-pick hidden">My 2nd Pick for You ↓</button>
           </div>
           <p class="book-author">Michael A. Singer</p>
           <span class="book-date book-date--ongoing">Started · Apr 2025</span>
@@ -306,7 +399,7 @@
       </li>
 
       <li class="book-item">
-        <span class="book-num">05</span>
+        <span class="book-num">09</span>
         <img src="https://m.media-amazon.com/images/I/81l3rZK4lnL.jpg" alt="Ikigai" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">Ikigai <span class="book-check">✓</span></h2>
@@ -321,7 +414,7 @@
       </li>
 
       <li class="book-item">
-        <span class="book-num">06</span>
+        <span class="book-num">10</span>
         <img src="https://m.media-amazon.com/images/I/71cCPf-r5ML.jpg" alt="Inner Engineering" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">Inner Engineering <span class="book-check">✓</span></h2>
@@ -336,7 +429,7 @@
       </li>
 
       <li class="book-item">
-        <span class="book-num">07</span>
+        <span class="book-num">11</span>
         <img src="https://m.media-amazon.com/images/I/617lxveUjYL.jpg" alt="The Alchemist" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">The Alchemist <span class="book-check">✓</span></h2>
@@ -351,7 +444,7 @@
       </li>
 
       <li class="book-item">
-        <span class="book-num">08</span>
+        <span class="book-num">12</span>
         <img src="https://m.media-amazon.com/images/I/91bYsX41DVL._AC_UF1000,1000_QL80_.jpg" alt="Atomic Habits" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">Atomic Habits <span class="book-check">✓</span></h2>
@@ -366,7 +459,7 @@
       </li>
 
       <li class="book-item">
-        <span class="book-num">09</span>
+        <span class="book-num">13</span>
         <img src="https://m.media-amazon.com/images/I/81GlTN6QQrL._AC_UF1000,1000_QL80_.jpg" alt="Think Like a Monk" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">Think Like a Monk <span class="book-check">✓</span></h2>
@@ -381,7 +474,7 @@
       </li>
 
       <li class="book-item" id="book-monk">
-        <span class="book-num">10</span>
+        <span class="book-num">14</span>
         <img src="https://m.media-amazon.com/images/I/71AiT9UlPyL._UF1000,1000_QL80_.jpg" alt="The Monk Who Sold His Ferrari" class="book-cover" loading="lazy" />
         <div class="book-body">
           <h2 class="book-title">The Monk Who Sold His Ferrari <span class="book-check">✓</span></h2>

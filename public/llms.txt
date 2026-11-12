@@ -1,120 +1,76 @@
-# Gyan Kumar Sah — llms.txt
-# This file is intended for AI language models and web crawlers.
-# Learn more about the llms.txt standard: https://llmstxt.org/
+# Gyan Kumar Sah
 
-> Gyan Kumar Sah is a fourth-year Physics student, experimental researcher, and hardware engineer
-> from Mahottari, Nepal, studying at SRM University, Andhra Pradesh, India on an 80% merit scholarship.
-> He works at the intersection of condensed matter physics, quantum technology, and hands-on engineering.
-> Website: https://www.gyankumarsah.com.np/
-> Contact: sahgyan9@gmail.com
-> LinkedIn: https://www.linkedin.com/in/gyan-sah-a4705b291
-> GitHub: https://github.com/sahgyan9
+> Physics student at SRM University-AP who builds lab instruments and the software that runs them. Looking for a six-month research internship in quantum hardware, January to June 2027, and later a PhD in quantum hardware. This file describes his work in plain words; technical details follow each item.
 
----
+- Website: https://www.gyankumarsah.com.np/
+- Email: sahgyan9@gmail.com
+- LinkedIn: https://www.linkedin.com/in/gyan-kumar-sah-a4705b291/
+- GitHub: https://github.com/sahgyan9
+- CV: https://www.gyankumarsah.com.np/Gyan_Kumar_Sah_CV.pdf
+- From: Mahottari, Nepal. Studies in Andhra Pradesh, India.
+- Last updated: November 2026
 
-## Identity
+## Education
 
-- Full Name: Gyan Kumar Sah
-- Also known as: Gyan Sah
-- Nationality: Nepali
-- Current Location: Andhra Pradesh, India
-- Institution: SRM University, Andhra Pradesh (SRMAP)
-- Year of Study: Fourth year, B.Sc. Physics
-- Scholarship: 80% merit scholarship
+- B.Sc. Physics (Honours with Research), Department of Physics, SRM University-AP, August 2023 to May 2027 (expected). Thesis supervisor: Dr. Krishna Prasad Maity. Dean's List; 80% merit scholarship.
+- Semester 7 is a six-month internship, January to June 2027.
+- +2: Global School of Science, Kathmandu. School: Lord Bright Wisdom School, Sarlahi.
 
----
+## Research and lab work (SRM University-AP)
 
-## Research Experience
+- Temperature control for the lab's probe station (2026, Low Temperature Physics Lab, with Dr. Krishna Prasad Maity). The vacuum chamber used for measurements kept overshooting its target temperature. He found the controller setting that caused it and wrote the software that now runs the measurements unattended. Details: Janis ST-LN-500 probe station, Cryo-con 22C controller, Wayne Kerr impedance analyser; overshoot reduced from +4.08 K to +0.22 K over 297 to 450 K; works from 300 to 450 K at 10^-2 mbar (liquid-nitrogen cooling is planned, not running); automated impedance spectroscopy from 20 Hz to 10 MHz; an isolated relay cutoff at 470 K. Code: https://github.com/sahgyan9/Cryocon_22C_Temperature_Controller_Python-File
+- A light sensor from cadmium selenide and graphene quantum dots (CdSe:GQD photodetector; 2025 to 2026, Device Physics Lab; with Akshay Sampath and Nilja George, under Dr. Maity). Mixing the two materials made the sensor respond about ten times faster (rise time 200 ms to 20 ms). He built and automated the measurement setup. Details: responsivity 0.098 A/W, specific detectivity 1.5 x 10^11 Jones. A draft paper exists; it has not been submitted.
+- Magnetic field and photocurrent in chromium-doped CdSe (Jan to Apr 2026, Device Physics Lab, with Visitha Padilam), funded by the university's UG/PG SEED Grant. Data collected; no report yet.
+- PMN-PT dielectric study (Sep 2026, Device Physics Lab): how a ceramic stores charge from 300 to 460 K, measured with his automated setup.
+- MoS2 thin film (Sep to Nov 2026): XRD, XPS and UV spectroscopy reports on a film grown by chemical vapour deposition.
+- Electrospun PVDF, PVA and PVA-Ag nanofibres (Aug to Nov 2026, course project with Dr. Pranab Mandal). Fibres of about 100 to 130 nm. No silver was detected in the PVA-Ag sample.
+- Cobalt thin film (2025, Exotic Interface Lab): a 30 nm sputtered cobalt Hall bar. The anomalous Hall measurement was attempted, gave no usable data, and the work was discontinued.
+- Quantum Reference Center, SRM University-AP (2026): a small supporting role, helping with system integration (vacuum, cryogenics, electronics) while the centre is set up.
 
-### CdSe/Graphene Quantum Dot Photodetector (Device Physics Lab, SRMAP)
-Gyan Kumar Sah designed and built a custom multi-wavelength photodetector measurement setup entirely from scratch.
-This included 3D-printed LED holders and sample stages designed in Fusion 360, LabVIEW automation scripts,
-and Python LED power calibration tools. He characterised CdSe:GQD composites (2:1 and 3:1 ratios) under
-375 nm, 530 nm, and 970 nm illumination at two power densities (0.66 and 1 mW/cm²). He extracted key device
-figures of merit: Responsivity, Detectivity, External Quantum Efficiency (EQE), Linear Dynamic Range (LDR),
-and modulation bandwidth. Instruments used: MFLI Zurich Lock-in Amplifier, Keithley SMU, Thorlab LED Driver,
-OMM-6810B Power Meter.
+## Work
 
-### Optically Controlled Ferromagnetic Thin Film (Exotic Interface Lab, SRMAP)
-Gyan Kumar Sah optimised RF sputtering parameters (base pressure, power) to deposit 30 nm Cobalt thin films
-on glass substrates with masked Hall geometry. Performed anomalous Hall effect measurements using a Zurich
-MFLI lock-in amplifier.
+- Production Engineer, Shakti Photon Solutions Pvt. Ltd. (Feb 2025 to present). A startup on the SRM AP campus that builds hydrogen electrolysers and fuel cells. He fabricates membrane electrode assemblies, machines parts (Fusion 360, CNC, 3D printing), writes lab procedures, worked on the design of a 30 x 30 cm electrolyser, built a hydrogen leak detector, commissioned a fuel-cell balance-of-plant system at IIT Delhi, and wrote a Python program for electrochemical tests on an ITECH power supply (https://github.com/sahgyan9/IT-M39002C-PowerSupply). He also built the company website (https://shakti-photon-solutions.vercel.app).
 
-### Cryogenic System Setup for Low-Temperature Measurements (Low Temperature Physics Lab, SRMAP)
-CNC-machined a custom aluminium vacuum connector to maintain 10⁻³ mbar pressure. Wrote LabVIEW programs
-interfacing a Keithley SMU and Temperature Controller to fully automate cryogenic measurements. Learned and
-implemented PID control systems.
+## Leadership
 
----
+- Track Lead, Technical and Innovation Track, Qiskit Fall Fest 2026, SRM University-AP (Sep to Oct 2026; https://www.qffsrmap2026.com). A student-run quantum computing festival. He led three cells through their heads: Technical Programs (Baratam Praneeth Gupta), Hackathon and Competition (Sri Vastava Sri Harsha Gampa) and Website and Technology (Srihaas Pigilam). The Quantum Capture the Flag contest was built and run by Jaswanth Kumar Kondameeda; Gyan supervised. Offline games were run by Jyoshna Pilli and her team. Gyan wrote a large part of the festival platform (a team product), built the tool that scored the hackathon's first round, and taught the hands-on Qiskit session. Hackathon finale: 45 teams confirmed, 44 present, 196 members.
+- Led the Aadigyan Winter Youth Program (IR Council, SRM University-AP, 2024), which hosted students and teachers from Nepal.
 
-## Industry Experience
+## Projects
 
-### Shakti Photon Solutions, Guntur, India — Paid Internship
-Green hydrogen electrolyzer and fuel cell engineering. Responsibilities included:
-- Designing electrolyzer components in Fusion 360 and manufacturing them via CNC and 3D printing
-- Working across materials: steel, graphite, acrylic, and PTFE/Teflon
-- Fabricating Membrane Electrode Assemblies (MEAs) using ultrasonic spray nozzle and hot pressing
-- Solely building an Arduino-based Hydrogen Leakage Detection System using MQ-8 sensor with custom 3D-printed housing
-- Designing a 30 × 30 cm large-scale electrolyzer
-- Delivering and setting up a Fuel Cell Balance of Plant (BOP) at IIT Delhi and training their staff
+- Superconducting qubit designs in Keysight ADS (Aug 2026). Designed and simulated, not fabricated: a single transmon with a readout resonator, and two transmons with a bus coupler, exported to GDSII.
+- Oberleaf (Sep 2026 to present, solo, MIT licence): a free LaTeX editor that compiles on the user's own computer and explains errors in plain English. https://github.com/sahgyan9/Oberleaf
+- Friendly Learning SRMAP (Dec 2024 to present, founder, mostly solo): a campus website for finding mentors and looking up faculty research. Still small: 27 registered accounts and 4 verified mentors. https://friendly-learning-srmap.vercel.app
+- Quantum Ascent (Jul to Aug 2026, solo): a free six-step course from a single qubit to the QAOA algorithm, with a simulator in the browser. https://quantum-ascent-77617.web.app
+- NEPSE Portfolio Insight (Jul to Nov 2026, solo): a private portfolio tracker for Nepal Stock Exchange investors. He pre-registered a test of its stock-ranking score; the score did not beat a matched benchmark, and he reports it that way. https://github.com/sahgyan9/NEPSE-Portfolio-Insight
+- Quantum Double Shield Protocol (Aug 2025, team): BB84 key distribution with a quantum random number generator in Qiskit. Third place, Amaravati Quantum Valley Hackathon. https://qdsp.lovable.app/
+- Nepali Village Calculator (2026): a loan-interest calculator in Nepali and English using Bikram Sambat dates. https://village-calculator.vercel.app
+- Email-to-calendar helper (May 2026): Google Apps Script with the Mistral API.
 
----
+## Honours and training
 
-## Software & Hackathon Projects
+- QuantaRiSE Quantum Winter Fellowship (selected), QMD Hub, Plaksha University, 14 Dec 2026 to 14 Jan 2027.
+- UG/PG SEED Grant, SRM University-AP, 2026.
+- WISER Quantum Algorithm and Hands-on Training, full scholarship, Dec 2025 to Jun 2026.
+- Certificates: WISER Summer Program 2026 (Jul 2026); QWorld Quantum Computing and Programming (Jun 2026); OpenAI AI Foundations (Jun 2026); Quantiverse 2026, CDAC Noida (Feb 2026); Descriptor and Machine Learning for Materials, SRM University-AP (Feb 2026); The Art of Doing Electronics, Coursera (Nov 2025); Data Science with Python, Finlatics (Aug 2025); Quantum Computing Fundamentals, LinkedIn Learning (Jul 2024).
 
-### Personal AI Assistant: Email-to-Calendar Automation & Mobile App
-Built a fully autonomous smart agent using Google Apps Script and the Mistral AI API to extract actionable event details from inbox emails and log them into a relational database. Developed a zero-code mobile frontend using Google AppSheet with swipe-to-approve gestures that automatically synchronize with Google Calendar.
+## Writing
 
-### Quantum Double Shield Protocol (Hackathon — 3rd Place)
-A quantum-enhanced secure communication protocol with adaptive authentication using Quantum Random Number
-Generation (QRNG) and the BB84 quantum key distribution protocol, built with Qiskit simulators.
-Won 3rd place at the Amaravati Quantum Valley Hackathon.
-Live prototype: https://qdsp.lovable.app/
+- "Journey of Leadership and Human Relation via Qiskit Fall Fest", LinkedIn article, 31 Oct 2026: https://www.linkedin.com/pulse/journey-leadership-human-relation-via-qiskit-fall-fest-gyan-kumar-sah-ekbtc/
+- Draft paper (not submitted): "Broadband UV-Visible-NIR Photodetection with Rapid Response in Drop-Cast CdSe:Graphene Quantum Dot Composite Thin Films on Silicon Substrates", with Akshay Sampath, Apr 2026.
 
-### Peer-to-Peer Learning Platform for SRMAP
-A self-initiated peer mentoring and academic collaboration platform for students at SRM University AP,
-helping students find hackathon partners, learning partners, and like-minded peers.
-Live site: https://friendly-learning-srmap.vercel.app/
+## How he thinks
 
-### Nepali Village Calculator
-A free Nepali compound interest calculator using Bikram Sambat (BS) calendar dates, built because there was no tool to help his mom calculate interest the way it's done in Nepali villages. Currently ranking #1 on Google Search for "village calculator nepal".
-Live site: https://village-calculator.vercel.app
+- Believe in the power of compounding: in learning, relationships and investing.
+- Think from fundamentals, and build things by hand to understand them.
+- A tool should explain itself (human-centred design, after Don Norman).
+- Build what does not exist yet.
+- Give credit by name.
+- Long term: build a business that funds scientists, and bring quantum technology to Nepal.
 
-### Temperature-Controlled Fan System (Academic Project)
-Built an automatic temperature-controlled fan system using analog circuits to improve heat management efficiency. Using a BC107 transistor, a thermistor, and a custom 3D-printed housing, the system automatically activates a DC fan when temperatures exceed a set threshold.
+## Pages
 
-### Post-Quantum Cryptography Study (Academic Project)
-Explored Shor's Algorithm, quantum superposition, and implications for existing cryptographic systems
-as part of a supervised academic project.
-
----
-
-## Technical Skills
-
-- Instruments: LabVIEW, Keithley SMU, MFLI Zurich Lock-in Amplifier, Thorlab LED Driver, OMM-6810B Power Meter
-- Manufacturing: Fusion 360 (CAD), CNC Machining, 3D Printing (FDM), RF Sputtering, MEA Fabrication
-- Programming: Python, Arduino, LabVIEW
-- Quantum: Qiskit, BB84 Protocol, QRNG, Shor's Algorithm
-- Web: HTML, CSS, JavaScript
-- 3D Graphics: Blender
-
----
-
-## Books & Intellectual Interests
-
-Gyan Kumar Sah reads extensively in philosophy, self-help, and design:
-The Monk Who Sold His Ferrari (Robin Sharma), Think Like a Monk (Jay Shetty), Atomic Habits (James Clear),
-The Alchemist (Paulo Coelho), Inner Engineering (Sadhguru), Ikigai (García & Miralles),
-The Untethered Soul (Michael A. Singer), The Way of the Peaceful Warrior (Dan Millman),
-The Design of Everyday Things (Don Norman).
-
-His guiding philosophy: "When you want something, all the universe conspires in helping you to achieve it." — Paulo Coelho
-
----
-
-## Pages on This Website
-
-- Home / Portfolio: https://www.gyankumarsah.com.np/
-- Work Gallery (lab images & videos): https://www.gyankumarsah.com.np/work-gallery.html
-- Curated Resources (quantum tools & simulators): https://www.gyankumarsah.com.np/resources.html
+- Home: https://www.gyankumarsah.com.np/
+- Work gallery (photos and videos of the work): https://www.gyankumarsah.com.np/work-gallery.html
+- Resources (quantum tools and simulators): https://www.gyankumarsah.com.np/resources.html
 - Books (reading list with notes): https://www.gyankumarsah.com.np/books.html
